@@ -1,0 +1,278 @@
+SiiNunit
+{
+accessory_sound_data : nh220.%truck%.esound
+{
+	exterior_sound: true
+
+	start: .start
+	start_no_fuel: .startbad
+	stop: .stop
+
+	engine[]: .e0
+	engine[]: .e1
+	engine[]: .e2
+	engine[]: .e3
+	engine[]: .e4
+
+	engine_load[]: .el0
+	engine_load[]: .el1
+	engine_load[]: .el2
+	engine_load[]: .el3
+	engine_load[]: .eburst
+
+	engine_nofuel[]: .enf0
+	engine_nofuel[]: .enf1
+	engine_nofuel[]: .enf2
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+	air_gear[2]: .airgear2
+
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+	air_brake[2]: .airbrake2
+	air_brake[3]: .airbrake3
+
+	engine_brake[]: .eb0
+
+	horn: .horn
+	air_horn: .ahorn
+	reverse: .reverse
+
+@include "/def/vehicle/truck/common_sound_ext.sui"
+
+	suitable_for[]: "nh220_220.%truck%.engine"
+	suitable_for[]: "nh220_440.%truck%.engine"
+	suitable_for[]: "nh220_600.%truck%.engine"
+	suitable_for[]: "nh220_750.%truck%.engine"
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/engine/NH220/ext/2s-start.ogg"
+	looped: false
+	volume: 0.65
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/engine/NH220/int/bad-start.ogg"
+	looped: false
+	volume: 0.5
+}
+
+sound_data: .stop
+{
+	name: "/sound/truck/engine/NH220/ext/engine_off.ogg"
+	looped: false
+	volume: 0.5
+}
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/engine/NH220/ext/dryer.ogg"
+	looped: true
+	is_2d: true
+	min_rpm: 250.0
+	max_rpm: 3000.0
+	volume: 1.32
+}
+
+sound_engine_data: .e1
+{
+	name: "/sound/truck/engine/NH220/ext/500rpm.ogg"
+	looped: true
+	pitch_reference: 500
+	min_rpm: 250.0
+	max_rpm: 800.0
+	volume: .6
+}
+
+sound_engine_data: .e2
+{
+	name: "/sound/truck/engine/NH220/int/1200rpm_combined.ogg"
+	looped: true
+	pitch_reference: 1200
+	min_rpm: 700
+	max_rpm: 1400
+	volume: 0.6
+}	
+
+sound_engine_data: .e3
+{
+	name: "/sound/truck/engine/NH220/int/1400rpm_load.ogg"
+	looped: true
+	pitch_reference: 1400
+	min_rpm: 1300
+	max_rpm: 2400
+	volume: 0.6
+}
+
+sound_engine_data: .e4
+{
+	name: "/sound/truck/engine/NH220/ext/1200rpm_ext.ogg"
+	looped: true
+	pitch_reference: 1200
+	min_rpm: 700.0
+	max_rpm: 3000.0
+	volume: 0.5
+}
+
+sound_engine_data: .el0
+{
+	name: "/sound/truck/engine/NH220/ext/500rpm-no-air.ogg"
+	looped: true
+	pitch_reference: 500
+	min_rpm: 350.0
+	max_rpm: 900.0
+	volume: .6
+}
+
+sound_engine_data: .el1
+{
+	name: "/sound/truck/engine/NH220/int/1650rpm_int.ogg"
+	looped: true
+	pitch_reference: 1650
+	min_rpm: 400
+	max_rpm: 1100
+	volume: .55
+}
+
+sound_engine_data: .el2
+{
+	name: "/sound/truck/engine/NH220/int/1650rpm_3.ogg"
+	looped: true
+	pitch_reference: 1650
+	min_rpm: 900
+	max_rpm: 2850
+	volume: .65
+}
+
+sound_engine_data: .el3
+{
+	name: "/sound/truck/engine/NH220/ext/1850rpm.ogg"
+	looped: true
+	pitch_reference: 1800
+	min_rpm: 900.0
+	max_rpm: 3000.0
+	volume: 0.6
+}
+
+
+sound_engine_data: .eburst
+{
+	name: "/sound/truck/engine/NH220/ext/burst.ogg"
+	looped: false
+	min_rpm: 20.0
+	max_rpm: 1400.0
+	volume: 1
+}
+
+sound_engine_data: .enf0
+{
+	name: "/sound/truck/engine/NH220/ext/1200rpm.ogg"
+	looped: true
+	is_2d: true
+	pitch_reference: 1200
+	min_rpm: 400.0
+	max_rpm: 2850.0
+	volume: 0.40
+}
+
+sound_engine_data: .enf1
+{
+	name: "/sound/truck/engine/NH220/ext/no-throttle-3.ogg"
+	looped: true
+	is_2d: true
+	pitch_reference: 1850
+	min_rpm: 700.0
+	max_rpm: 3000.0
+	volume: 0.40
+}
+
+sound_engine_data: .enf2
+{
+	name: "/sound/truck/engine/NH220/ext/long-idle.ogg"
+	looped: true
+	pitch_reference: 650
+	min_rpm: 300.0
+	max_rpm: 700.0
+	volume: 0.40
+}
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/engine/NH220/ext/gear_air_1.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airgear1
+{
+	name: "/sound/truck/engine/NH220/ext/gear_air_2.ogg"
+	looped: false
+	volume: 0.04
+}
+
+sound_data: .airgear2
+{
+	name: "/sound/truck/engine/NH220/ext/gear_air_3.ogg"
+	looped: false
+	volume: 0.04
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/common/ext/air_brake1.ogg"
+	looped: false
+}
+
+sound_data: .airbrake1
+{
+	name: "/sound/truck/common/ext/air_brake2.ogg"
+	looped: false
+}
+
+sound_data: .airbrake2
+{
+	name: "/sound/truck/common/ext/air_brake3.ogg"
+	looped: false
+}
+
+sound_data: .airbrake3
+{
+	name: "/sound/truck/common/ext/air_brake4.ogg"
+	looped: false
+}
+
+sound_engine_data: .eb0
+{
+	name: "/sound/truck/engine/NH220/ext/engine_brake_ext.ogg"
+	looped: true
+	is_2d: true
+	pitch_reference: 1540
+	min_rpm: 750.0
+	max_rpm: 2880.0
+	volume: 1.25
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/common/ext/horn.ogg"
+	looped: true
+}
+
+sound_data: .ahorn
+{
+	name: "/sound/truck/common/ext/air_horn.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/common/ext/reverse.ogg"
+	looped: true
+}
+
+@include "/def/vehicle/truck/common_sound_ext_data.sui"
+}

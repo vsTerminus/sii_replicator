@@ -1,0 +1,58 @@
+SiiNunit
+{
+	accessory_engine_data : e9_500.%truck%.engine
+	{
+		name: "Mack E9-500"
+		price: 34200
+		unlock: 8 # Unlocks at level 8
+		info[]: "500 @@hp@@ (373@@kw@@)"
+		info[]: "1@@dg@@660 @@lb_ft@@ (2@@dg@@251 @@nm@@)"
+		info[]: "1@@dg@@300 @@rpm@@"
+		icon: "engmak_E9"
+		torque: 2251	# Engine power in Newton-metres
+		volume:	16.4
+		
+		# Torque Curves
+		# A bit of guesswork outside the 1000 to 1700 range.
+		# Ref: https://www.bigmacktrucks.com/topic/24112-e9-v-8-power-and-torque-ratings/
+		torque_curve[]: (300, 0)
+		torque_curve[]: (500, 0.55)
+		torque_curve[]: (900, 0.70)
+		torque_curve[]: (1000, 0.90)
+		torque_curve[]: (1100, 0.96)
+		torque_curve[]: (1200, 0.98)
+		torque_curve[]: (1300, 1)
+		torque_curve[]: (1400, 0.99)
+		torque_curve[]: (1500, 0.97)
+		torque_curve[]: (1600, 0.96)
+		torque_curve[]: (1700, 0.87)
+		torque_curve[]: (1900, 0.84)
+		torque_curve[]: (2300, 0.4)
+		torque_curve[]: (2600, 0)
+		
+		# RPM Data
+		# Ref: http://repair.alldata.com/online2help/techRef/Emission_Control_System_Application_Chart/Vehicles_1974_-_Current/Mack/1974-1995.htm
+		rpm_idle: 650			# RPM at idle
+		rpm_limit: 2300			# Governed RPM limit
+		rpm_limit_neutral: 2300	# RPM limit in neutral gear
+		rpm_range_low_gear: (950, 1650) 	# Shift thresholds for Automatic
+		rpm_range_high_gear: (1100, 1650) 	# Shift thresholds for Automatic
+		rpm_range_power_boost: (450, 350)	# Adaptive Automatic. Combined with rpm_range_*_gear must not exceed rpm_limit
+		
+		# Diesel Exhaust Fluid
+		adblue_consumption: 0		# None - pre-emissions.
+		no_adblue_power_limit: 1.0	# No reduction in power if DEF tank is empty
+		
+		# Engine Brake data
+		engine_brake: 2.0			# Engine Brake Strength
+		engine_brake_downshift: 0	# Enable automatic downshift for Engine Brake
+		engine_brake_positions: 3	# The number of engine brake intensities
+
+		# Sound Data
+		overrides[]: "/def/vehicle/truck/%truck%/sound/interior_e9.sii"
+		overrides[]: "/def/vehicle/truck/%truck%/sound/exterior_e9.sii"
+		
+		# Transmission Default - Spicer 6x4 Spicer PSO140-6A AMO1750-4D
+		defaults[]: "/def/vehicle/truck/%truck%/transmission/spicer6x4_430_18speed.sii"
+	}
+}

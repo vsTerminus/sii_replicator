@@ -1,0 +1,272 @@
+SiiNunit
+{
+accessory_sound_data : nh220.%truck%.isound
+{
+	exterior_sound: false
+
+	start: .start
+	start_no_fuel: .startbad
+	stop: .stop
+
+	engine[]: .e0
+	engine[]: .e1
+	engine[]: .e2
+
+	engine_load[]: .el1
+	engine_load[]: .el2
+	engine_load[]: .eburst
+
+	engine_nofuel[]: .enf1
+	engine_nofuel[]: .enf2
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+	air_gear[2]: .airgear2
+
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+	air_brake[2]: .airbrake2
+	air_brake[3]: .airbrake3
+
+	engine_brake[]: .eb0
+
+	horn: .horn
+	air_horn: .ahorn
+	reverse: .reverse
+
+	blinker_on: .blinker_on
+	blinker_off: .blinker_off
+	wipers_up: .wipers_up
+	wipers_down: .wipers_down
+
+@include "/def/vehicle/truck/common_sound_int.sui"
+
+	suitable_for[]: "nh220_220.%truck%.engine"
+	suitable_for[]: "nh220_440.%truck%.engine"
+	suitable_for[]: "nh220_600.%truck%.engine"
+	suitable_for[]: "nh220_750.%truck%.engine"
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/engine/NH220/int/2s-start.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/engine/NH220/int/bad-start-lpf.ogg"
+	looped: false
+	volume: 0.35
+}
+
+sound_data: .stop
+{
+	name: "/sound/truck/engine/NH220/int/stop.ogg"
+	looped: false
+	volume: 0.2
+}
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/engine/NH220/int/500rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 500
+
+	min_rpm: 250
+	max_rpm: 800
+	volume: 0.4
+}
+
+sound_engine_data: .e1
+{
+	name: "/sound/truck/engine/NH220/int/1200rpm_combined.ogg"
+
+	looped: true
+
+	pitch_reference: 1200
+
+	min_rpm: 700
+	max_rpm: 1400
+	volume: 0.42
+}	
+
+sound_engine_data: .e2
+{
+	name: "/sound/truck/engine/NH220/int/1400rpm_load.ogg"
+
+	looped: true
+
+	pitch_reference: 1400
+
+	min_rpm: 1300
+	max_rpm: 2400
+	volume: 0.42
+}
+
+sound_engine_data: .el1
+{
+	name: "/sound/truck/engine/NH220/int/1650rpm_int.ogg"
+	looped: true
+	pitch_reference: 1650
+	min_rpm: 400
+	max_rpm: 1100
+	volume: .44
+}
+
+sound_engine_data: .el2
+{
+	name: "/sound/truck/engine/NH220/int/1650rpm_3.ogg"
+	looped: true
+	pitch_reference: 1650
+	min_rpm: 900
+	max_rpm: 2850
+	volume: .55
+}
+
+sound_engine_data: .eburst
+{
+	name: "/sound/truck/engine/NH220/int/burst.ogg"
+	looped: false
+	min_rpm: 20.0
+	max_rpm: 1400.0
+	volume: 0.50
+}
+
+sound_engine_data: .enf1
+{
+	name: "/sound/truck/engine/NH220/int/no-fuel-n14c.ogg"
+
+	looped: true
+
+	pitch_reference: 1600
+
+	min_rpm: 400
+	max_rpm: 2800
+	volume: 0.85
+}	
+
+sound_engine_data: .enf2
+{
+	name: "/sound/truck/engine/NH220/int/1200rpm_combined.ogg"
+
+	looped: true
+
+	pitch_reference: 1200
+
+	min_rpm: 400
+	max_rpm: 2800
+	volume: 0.25
+}
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/engine/NH220/int/int_gear_air_1.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airgear1
+{
+	name: "/sound/truck/engine/NH220/int/int_gear_air_2.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airgear2
+{
+	name: "/sound/truck/engine/NH220/int/int_gear_air_3.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/common/int/air_brake1.ogg"
+	looped: false
+}
+
+sound_data: .airbrake1
+{
+	name: "/sound/truck/common/int/air_brake2.ogg"
+	looped: false
+}
+
+sound_data: .airbrake2
+{
+	name: "/sound/truck/common/int/air_brake3.ogg"
+	looped: false
+}
+
+sound_data: .airbrake3
+{
+	name: "/sound/truck/common/int/air_brake4.ogg"
+	looped: false
+}
+
+sound_engine_data: .eb0
+{
+	name: "/sound/truck/engine/NH220/int/n14c_engine_brake_int.ogg"
+	looped: true
+	is_2d: true
+	pitch_reference: 1540
+	min_rpm: 750.0
+	max_rpm: 2880.0
+	volume: 0.8
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/common/int/horn.ogg"
+	looped: true
+}
+
+sound_data: .ahorn
+{
+	name: "/sound/truck/common/int/air_horn.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/common/int/reverse.ogg"
+	looped: true
+}
+
+sound_data: .blinker_on
+{
+	name: "/sound/truck/common/int/blinker_on.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.2
+}
+
+sound_data: .blinker_off
+{
+	name: "/sound/truck/common/int/blinker_off.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.2
+}
+
+sound_data: .wipers_up
+{
+	name: "/sound/truck/common/int/wiper_up.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.34
+}
+
+sound_data: .wipers_down
+{
+	name: "/sound/truck/common/int/wiper_down.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.34
+}
+
+@include "/def/vehicle/truck/common_sound_int_data.sui"
+}

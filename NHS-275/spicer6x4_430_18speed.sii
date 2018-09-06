@@ -1,0 +1,44 @@
+SiiNunit
+{
+	accessory_transmission_data : spicer18_430.%truck%.transmission
+	{
+		name: "Spicer PSO140-6A AMO1750-4D"
+		price: 6405
+		unlock: 0
+		icon: "trans_spicer"
+		
+		differential_ratio: 4.30
+
+        ratios_reverse[0]: -11.7819
+        ratios_reverse[1]: -9.2628
+        ratios_reverse[2]: -7.49
+        ratios_reverse[3]: -6.0507
+ 
+        ratios_forward[0]: 11.7819
+        ratios_forward[1]: 9.2628
+        ratios_forward[2]: 7.49
+        ratios_forward[3]: 6.0507
+        ratios_forward[4]: 5.0592
+        ratios_forward[5]: 4.08
+        ratios_forward[6]: 3.3048
+        ratios_forward[7]: 2.8024
+        ratios_forward[8]: 2.26
+        ratios_forward[9]: 1.8306
+        ratios_forward[10]: 1.5376
+        ratios_forward[11]: 1.24
+		# Technically there are two gears with a ratio of 1.24
+		# It makes little sense to include them both, so I removed 5-Under and kept 4-Direct.
+        ratios_forward[12]: 1.04
+        ratios_forward[13]: 1.0125
+        ratios_forward[14]: 1.00
+        ratios_forward[15]: .84
+        ratios_forward[16]: .81
+        ratios_forward[17]: .68
+
+        # No retarder
+        retarder: 0
+
+        # This is a dual stick manual, it shifts slower than an automatic.
+        shift_time: 1.5
+   }
+}

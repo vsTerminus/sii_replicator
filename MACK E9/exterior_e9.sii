@@ -1,0 +1,371 @@
+SiiNunit
+{
+accessory_sound_data : e9.%truck%.esound
+{
+	start: .start
+	stop: .stop
+	start_no_fuel: .startbad
+
+	engine[]: .e0
+	engine[]: .e1
+	engine[]: .e2
+	engine[]: .e3
+	engine[]: .e4
+	engine[]: .e5
+
+	engine_load[]: .el0
+	engine_load[]: .el1
+	engine_load[]: .el2
+	engine_load[]: .el3
+	engine_load[]: .el4
+	engine_load[]: .el5
+
+	engine_nofuel[]: .enf0
+	engine_nofuel[]: .enf1
+	engine_nofuel[]: .enf2
+	engine_nofuel[]: .enf3
+	engine_nofuel[]: .enf4
+
+
+	turbo: .t
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+	air_gear[2]: .airgear2
+	
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+	air_brake[2]: .airbrake2
+
+	engine_brake[]: .eb
+
+	horn: .horn
+	air_horn: .ahorn
+	reverse: .reverse
+
+	exterior_sound: true
+
+@include "/def/vehicle/truck/common_sound_ext.sui"
+
+	suitable_for[]: "e9_610.%truck%.engine"
+	suitable_for[]: "e9_500.%truck%.engine"
+	suitable_for[]: "e9_450.%truck%.engine"
+	suitable_for[]: "e9_400.%truck%.engine"
+
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/Superliner_E9/ext/engine_on.ogg"
+	looped: false
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/Superliner_E9/ext/engine_on_bad.ogg"
+	looped: false
+}
+
+
+sound_data: .stop
+{
+	name: "/sound/truck/Superliner_E9/ext/engine_off.ogg"
+	looped: false
+}
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/Superliner_E9/ext/dryer.ogg"
+
+	looped: true
+
+	min_rpm: 300.0
+	max_rpm: 2950.0
+	volume: 0.84
+}
+
+sound_engine_data: .e1
+{
+	name: "/sound/truck/Superliner_E9/ext/500rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 600
+
+	min_rpm: 350.0
+	max_rpm: 780.0
+	volume: 0.7
+}
+
+sound_engine_data: .e2
+{
+	name: "/sound/truck/Superliner_E9/ext/1000rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 1100
+
+	min_rpm: 640.0
+	max_rpm: 1650.0
+	volume: 0.55
+}
+
+sound_engine_data: .e3
+{
+	name: "/sound/truck/Superliner_E9/ext/1500rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 1430
+
+	min_rpm: 1450.0
+	max_rpm: 2800.0
+	volume: 0.33
+}
+
+sound_engine_data: .e4
+{
+	name: 			"/sound/truck/Superliner_E9/ext/lever_le_pied.ogg"
+	looped: true
+
+	looped: true
+
+	min_rpm: 740.0
+	max_rpm: 3200.0
+	pitch_reference:  1320
+	volume: 1.1
+}
+
+sound_engine_data: .e5
+{
+	name: "/sound/truck/Superliner_E9/ext/turbo_idle.ogg"
+
+	looped: true
+
+	pitch_reference: 1200
+
+	min_rpm: 630.0
+	max_rpm: 3500.0
+	volume: 0.4
+}
+
+sound_engine_data: .el0
+{
+	name: "/sound/truck/Superliner_E9/ext/exhaust_idle.ogg"
+
+	looped: true
+
+	pitch_reference: 600
+
+	min_rpm: 350.0
+	max_rpm: 1000.0
+	volume: 1.25
+}
+
+sound_engine_data: .el1
+{
+	name: "/sound/truck/Superliner_E9/ext/1200rpm_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1155
+
+	min_rpm: 730.0
+	max_rpm: 1300.0
+	volume: 0.76
+}
+
+sound_engine_data: .el2
+{
+	name: "/sound/truck/Superliner_E9/ext/1220rpm_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1380
+
+	min_rpm: 990.0
+	max_rpm: 1490.0
+	volume: 1.3
+}
+
+sound_engine_data: .el3
+{
+	name: "/sound/truck/Superliner_E9/ext/1400rpm_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1550
+
+	min_rpm: 1180.0
+	max_rpm: 1670.0
+	volume: 1.35
+}
+
+sound_engine_data: .el4
+{
+	name: "/sound/truck/Superliner_E9/ext/1800rpm_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1640
+
+	min_rpm: 1390.0
+	max_rpm: 2040.0
+	volume: 1.4
+}
+
+sound_engine_data: .el5
+{
+	name: "/sound/truck/Superliner_E9/ext/2000rpm_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1760
+
+	min_rpm: 1700.0
+	max_rpm: 2950.0
+	volume: 1.6
+}
+
+sound_engine_data: .enf0
+{
+	name: 			"/sound/truck/Superliner_E9/ext/gear_air.ogg"
+
+	looped: true
+
+	min_rpm: 780.0
+	max_rpm: 2950.0
+
+	volume: 0.48
+}
+
+sound_engine_data: .enf1
+{
+	name: "/sound/truck/Superliner_E9/ext/1000rpm.ogg"
+
+	pitch_reference: 1100
+
+	min_rpm: 350.0
+	max_rpm: 1360.0
+	volume: 0.6
+}
+
+sound_engine_data: .enf2
+{
+	name: 			"/sound/truck/Superliner_E9/ext/lever_le_pied.ogg"
+	looped: true
+
+	looped: true
+
+	min_rpm: 720.0
+	max_rpm: 3200.0
+	pitch_reference:  1320
+	volume: 1.33
+}
+
+sound_engine_data: .enf3
+{
+	name: "/sound/truck/Superliner_E9/ext/1500rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 1700
+
+	min_rpm: 1200.0
+	max_rpm: 2950.0
+	volume: 0.33
+}
+
+sound_engine_data: .enf4
+{
+	name: "/sound/truck/Superliner_E9/ext/turbo_idle.ogg"
+
+	looped: true
+
+	pitch_reference: 1200
+
+	min_rpm: 400.0
+	max_rpm: 3500.0
+	volume: 0.3
+}
+
+sound_data: .t
+{
+	name: "/sound/truck/Superliner_E9/ext/turbo_ext.ogg"
+	looped: true
+
+	volume: 0.75
+}
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/Superliner_E9/ext/gear_air_1.ogg"
+		volume: 0.01
+}
+
+sound_data: .airgear1
+{
+	name: "/sound/truck/Superliner_E9/ext/gear_air_2.ogg"
+		volume: 0.01
+}
+sound_data: .airgear2
+{
+	name: "/sound/truck/Superliner_E9/ext/gear_air_3.ogg"
+		volume: 0.01
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/Superliner_E9/ext/air_brake1.ogg"
+
+	looped: false
+}
+
+sound_data: .airbrake1
+{
+	name: "/sound/truck/Superliner_E9/ext/air_brake2.ogg"
+
+	looped: false
+}
+
+sound_data: .airbrake2
+{
+	name: "/sound/truck/Superliner_E9/ext/air_brake3.ogg"
+
+	looped: false
+}
+
+sound_engine_data: .eb
+{
+	name: "/sound/truck/Superliner_E9/ext/engine_brake_ext.ogg"
+	looped: true
+
+	pitch_reference: 1380
+	min_rpm: 750.0
+	max_rpm: 3200.0
+	volume: 1.0
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/Superliner_E9/ext/horn.ogg"
+	looped: true
+}
+
+sound_data: .ahorn
+{
+	name: "/sound/truck/Superliner_E9/ext/air_horn.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/Superliner_E9/ext/reverse.ogg"
+	looped: true
+}
+
+@include "/def/vehicle/truck/common_sound_ext_data.sui"
+
+}
+
+
