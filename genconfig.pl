@@ -2,12 +2,14 @@
 
 use v5.10;
 
-opendir my $dir, "." or die "Cannot open current directory: $!";
-my @files = readdir $dir;
-closedir $dir;
+my $dir = $ARGV[0] // ".";
+
+opendir my $in, $dir or die "Cannot open current directory: $!";
+my @files = readdir $in;
+closedir $in;
 
 
-my $trucks = "trucks.txt";
+my $trucks = $dir . "/trucks.txt";
 open my $fh, "<", $trucks;
 my @trucks = <$fh>;
 close @trucks;
@@ -17,9 +19,9 @@ foreach my $truck (@trucks)
     chomp $truck;
     say "Generating config for $truck...";
 
-    `mkdir -p ./def/vehicle/truck/$truck/sound/`;
-    `mkdir -p ./def/vehicle/truck/$truck/engine/`;
-	`mkdir -p ./def/vehicle/truck/$truck/transmission/`;
+    `mkdir -p $dir/def/vehicle/truck/$truck/sound/`;
+    `mkdir -p $dir/def/vehicle/truck/$truck/engine/`;
+	`mkdir -p $dir/def/vehicle/truck/$truck/transmission/`;
 
     foreach my $file (@files)
     {
@@ -31,8 +33,8 @@ foreach my $truck (@trucks)
 		# Transmission File
 		$subdir = 'transmission' if ( $file =~ /speed.sii$/ );
 		
-        `cp $file ./def/vehicle/truck/$truck/$subdir/`;
+        `cp $dir/$file $dir/def/vehicle/truck/$truck/$subdir/`;
     }
 
-    `sed -i 's/%truck%/$truck/' ./def/vehicle/truck/$truck/*/*`;
+    `sed -i 's/%truck%/$truck/' $dir/def/vehicle/truck/$truck/*/*`;
 }

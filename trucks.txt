@@ -19,6 +19,7 @@ iveco.hiway
 iveco.nissan
 iveco.s
 iveco.stralis
+ken108
 ken200
 kenworth.521
 kenworth.needlenose
@@ -42,6 +43,7 @@ man.irizar.pb
 man.tga
 man.tgs
 man.tgs_euro6
+man.tgx
 man.tgx2010
 man.tgx_euro6
 mercedes.1518lm
@@ -62,12 +64,15 @@ peterbilt.389
 peterbilt.389v2
 peterbilt.567_gtm
 peterbilt.579
+renault.magnum
+renault.premium
 rs
 s580
 scania.143m
 scania.50k_r_high
 scania.k
 scania.r
+scania.r_2016
 scania.r4
 scania.rs
 scania.s_2016
@@ -92,6 +97,8 @@ volvo.nh12
 volvo.nl94
 volvo_vnl
 volvo.vnl780
+volvo.vnl2018
 volvo_vnr
 volvo.x
 western.4900
+zil
