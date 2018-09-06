@@ -3,13 +3,14 @@
 use v5.10;
 
 my $dir = $ARGV[0] // ".";
+say "Processing $dir/*.sii";
 
-opendir my $in, $dir or die "Cannot open current directory: $!";
-my @files = readdir $in;
-closedir $in;
+opendir my $dh, $dir or die "Cannot open current directory: $!";
+my @files = readdir $dh;
+closedir $dh;
 
 
-my $trucks = $dir . "/trucks.txt";
+my $trucks = "./trucks.txt";
 open my $fh, "<", $trucks;
 my @trucks = <$fh>;
 close @trucks;
