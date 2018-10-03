@@ -1,0 +1,82 @@
+SiiNunit
+{
+	/**
+	 * 1974 CAT 1693 T.
+	 * This was the OTR version of the D343 Tractor Engine.
+	 * T stands for Turbo, A for Aftercooler. 
+	 * The 325HP 1693 T was the least powerful 1693, and was not aftercooled.
+	 */
+	accessory_engine_data : 1693_325.%truck%.engine
+	{
+		name: "CAT 1693T 325HP"
+		price: 13961	# Engine price
+		unlock: 0		# Unlocks @ Level
+
+		# Engine display info
+		info[]: "325 @@hp@@ (242@@kw@@)"
+		info[]: "1000 @@lb_ft@@ (1356 @@nm@@)"
+		info[]: "1@@dg@@485 @@rpm@@"
+		icon: "eng_1693"
+
+		# Engine Specs
+		torque: 1356		# Engine power in Newton-metres
+		volume: 14.6		# Engine size in liters. Used for Realistic Fuel Consumption settings
+
+		# Torque Curves
+		# I could not find the torque curve for this configuration,
+		# so I am re-using the curve from the 375HP TA.
+		#
+		# I could only find torque curves down to 1400rpm
+		# A forum post suggested that it only makes 44% of peak torque at 800rpm, so we'll try that.
+		# Everything else between is just a guess.
+		torque_curve[]: (250, 0.00)
+		torque_curve[]: (300, 0.36)
+		torque_curve[]: (400, 0.40)
+		torque_curve[]: (800, 0.439301)
+		torque_curve[]: (900, 0.65)
+		torque_curve[]: (1000, 0.80)
+		torque_curve[]: (1200, 0.95)
+		torque_curve[]: (1300, 0.97)
+		torque_curve[]: (1400, 1.0)
+		torque_curve[]: (1475, 1.0)
+		torque_curve[]: (1500, 0.995633)
+		torque_curve[]: (1550, 0.991266)
+		torque_curve[]: (1600, 0.982533)
+		torque_curve[]: (1650, 0.973799)
+		torque_curve[]: (1700, 0.965066)
+		torque_curve[]: (1750, 0.951965)
+		torque_curve[]: (1800, 0.938865)
+		torque_curve[]: (1850, 0.917031)
+		torque_curve[]: (1900, 0.899563)
+		torque_curve[]: (1950, 0.877729)
+		torque_curve[]: (2000, 0.855895)
+		torque_curve[]: (2050, 0.834061)
+		torque_curve[]: (2100, 0.819214)
+		torque_curve[]: (4000, 0.0)
+
+		# RPM Data
+		rpm_idle: 600			# Normal idle at 750, High Idle at 900
+		rpm_limit: 2100			# Governed RPM limit
+		rpm_limit_neutral: 2305	# RPM limit in neutral gear
+		rpm_range_low_gear: (1600, 1900)			# Shift Points in Low Gears
+		rpm_range_high_gear: (1500, 1900)		# Shift Points in High Gears
+		rpm_range_power_boost: (0, 200)			# Run to redline under load.
+		rpm_range_engine_brake: (800, 2200)
+		
+		# Diesel Exhaust Fluid
+		adblue_consumption: 0		# None - No emissions equipment on this engine (Except in california, and even then it certainly wasn't DEF.)
+		no_adblue_power_limit: 1.0	# No reduction in power if DEF tank is empty
+
+		# Engine Brake data
+		engine_brake: 2.0			# No Engine Brake on this truck, instead it had CAT's "Brakesaver" hydraulic retarder, which functioned like a torque converter.
+		engine_brake_downshift: 0	# Enable automatic downshift for Engine Brake
+		engine_brake_positions: 1	# The number of engine brake intensities
+
+		# Sound Data
+		overrides[]: "/def/vehicle/truck/%truck%/sound/interior_1693.sii"
+		overrides[]: "/def/vehicle/truck/%truck%/sound/exterior_1693.sii"
+		
+		# Transmission Default - Spicer 6&4 PSO140-6A AMO1750-4D with 4.63 rears
+		defaults[]: "/def/vehicle/truck/%truck%/transmission/spicer6x4_463_18speed.sii"
+	}
+}

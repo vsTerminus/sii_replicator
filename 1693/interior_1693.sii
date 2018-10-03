@@ -1,0 +1,426 @@
+SiiNunit
+{
+accessory_sound_data : 1693.%truck%.isound
+{
+	exterior_sound: false
+
+	start: .start
+	start_no_fuel: .startbad
+	stop: .stop
+	
+	engine[]: .e0
+	engine[]: .e1
+	engine[]: .e2
+	engine[]: .e3
+	engine[]: .e4
+	engine[]: .e5
+	engine[]: .e6
+	engine[]: .e7
+	engine[]: .e8
+	
+	engine_exhaust[]: .ee0
+	
+	engine_load[]: .el0
+	engine_load[]: .el1
+	engine_load[]: .el2
+	engine_load[]: .el3
+	engine_load[]: .el4
+	engine_load[]: .el5
+	engine_load[]: .el6
+	engine_load[]: .el7
+	engine_load[]: .eburst
+	
+	engine_nofuel[]: .enf0
+	engine_nofuel[]: .enf1
+	engine_nofuel[]: .enf2
+	engine_nofuel[]: .enf3
+	engine_nofuel[]: .enf4
+	engine_nofuel[]: .enf5
+	
+	turbo: .t
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+
+	engine_brake[]: .bs0
+
+	horn: .horn
+	air_horn: .ahorn
+	reverse: .reverse
+	
+	blinker_on: .blinker_on
+	blinker_off: .blinker_off
+	wipers_up: .wipers_up
+	wipers_down: .wipers_down
+
+@include "/def/vehicle/truck/common_sound_int.sui"
+
+	suitable_for[]: "1693_325.%truck%.engine"
+	suitable_for[]: "1693_375.%truck%.engine"
+	suitable_for[]: "1693_380.%truck%.engine"
+	suitable_for[]: "1693_425.%truck%.engine"
+	suitable_for[]: "1693_500.%truck%.engine"
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/engine/1693/int/startup.ogg"
+	looped: false
+	volume: 1.0
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/engine/NHS275/int/bad-start.ogg"
+	looped: false
+	volume: 0.5
+}
+
+sound_data: .stop
+{
+	name: "/sound/truck/engine/1693/int/shutdown.ogg"
+	looped: false
+	volume: 0.3
+}
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 100.0
+	max_rpm: 700.0
+	volume: 1.0
+}
+
+sound_engine_data: .e1
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 700.0
+	max_rpm: 800.0
+	volume: 0.9
+}
+
+sound_engine_data: .e2
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 800.0
+	max_rpm: 900.0
+	volume: 0.75
+}
+
+sound_engine_data: .e3
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 900.0
+	max_rpm: 1000.0
+	volume: 0.55
+}
+
+sound_engine_data: .e4
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 1000.0
+	max_rpm: 1100.0
+	volume: 0.35
+}
+
+sound_engine_data: .e5
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 1100.0
+	max_rpm: 1200.0
+	volume: 0.10
+}
+
+sound_engine_data: .e6
+{
+	name: "/sound/truck/engine/1693/int/1765rpm.ogg"
+	looped: true
+	pitch_reference: 1765
+	min_rpm: 700
+	max_rpm: 3000
+	volume: 0.35
+}
+
+sound_engine_data: .e7
+{
+	name: "/sound/truck/engine/1693/int/C15_1100rpm_exhaust.ogg"
+	looped: true
+	pitch_reference: 1100
+	min_rpm: 500.0
+	max_rpm: 600.0
+	volume: 0.0
+}
+
+sound_engine_data: .e8
+{
+	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
+	looped: true
+	min_rpm: 100.0
+	max_rpm: 575.0
+	volume: 0.4
+}
+
+sound_engine_data: .ee0
+{
+	name: "/sound/truck/engine/1693/int/C15_1100rpm_exhaust.ogg"
+	looped: true
+	pitch_reference: 1100
+	min_rpm: 200.0
+	max_rpm: 3000.0
+	volume: 0.3
+}
+
+sound_engine_data: .el0
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 100.0
+	max_rpm: 700.0
+	volume: 1.0
+}
+
+sound_engine_data: .el1
+{
+	name: "/sound/truck/engine/1693/int/1765rpm_load.ogg"
+	looped: true
+	pitch_reference: 1765
+	min_rpm: 100
+	max_rpm: 3000
+	volume: 0.35
+}
+
+sound_engine_data: .el2
+{
+	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
+	looped: true
+	min_rpm: 100.0
+	max_rpm: 900.0
+	volume: 0.7
+}
+
+sound_engine_data: .el3
+{
+	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
+	looped: true
+	min_rpm: 900.0
+	max_rpm: 1000.0
+	volume: 0.6
+}
+
+sound_engine_data: .el4
+{
+	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
+	looped: true
+	min_rpm: 1000.0
+	max_rpm: 1100.0
+	volume: 0.5
+}
+
+sound_engine_data: .el5
+{
+	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
+	looped: true
+	min_rpm: 1100.0
+	max_rpm: 1200.0
+	volume: 0.4
+}
+
+sound_engine_data: .el6
+{
+	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
+	looped: true
+	min_rpm: 1200.0
+	max_rpm: 1300.0
+	volume: 0.25
+}
+
+sound_engine_data: .el7
+{
+	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
+	looped: true
+	min_rpm: 1300.0
+	max_rpm: 1400.0
+	volume: 0.1
+}
+
+sound_engine_data: .eburst
+{
+	name: "/sound/truck/engine/1693/int/burst.ogg"
+	looped: false
+	min_rpm: 20.0
+	max_rpm: 1600.0
+	volume: .4
+}
+
+sound_engine_data: .enf0
+{
+	name: "/sound/truck/engine/1693/int/1765rpm_load.ogg"
+	looped: true
+	pitch_reference: 1765
+	min_rpm: 200.0
+	max_rpm: 3000.0
+	volume: 0.2
+}
+
+sound_engine_data: .enf1
+{
+	name: "/sound/truck/engine/1693/int/1765rpm.ogg"
+	looped: true
+	pitch_reference: 1765
+	min_rpm: 200
+	max_rpm: 3000
+	volume: .2
+}
+
+sound_engine_data: .enf2
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 200.0
+	max_rpm: 900.0
+	volume: 0.6
+}
+
+sound_engine_data: .enf3
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 900.0
+	max_rpm: 1000.0
+	volume: 0.5
+}
+
+sound_engine_data: .enf4
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 1000.0
+	max_rpm: 1100.0
+	volume: 0.4
+}
+
+sound_engine_data: .enf5
+{
+	name: "/sound/truck/engine/1693/int/idle.ogg"
+	looped: true
+	pitch_reference: 600
+	min_rpm: 1100.0
+	max_rpm: 1200.0
+	volume: 0.3
+}
+
+sound_data: .t
+{
+	name: "/sound/truck/engine/1693/int/T1810.ogg"
+	looped: true
+	volume: 0.20
+}
+
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/engine/1693/int/gear_air_1.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airgear1
+{
+	name: "/sound/truck/engine/1693/int/gear_air_2.ogg"
+	looped: false
+	volume: 0.04
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/engine/1693/int/air_brake1.ogg"
+	looped: false
+}
+
+sound_data: .airbrake1
+{
+	name: "/sound/truck/engine/1693/int/air_brake2.ogg"
+	looped: false
+}
+sound_engine_data: .bs0
+{
+	name: "/sound/truck/engine/1693/int/voith_retarder.ogg"
+	looped: true
+	pitch_reference: 1765
+	min_rpm: 200.0
+	max_rpm: 3000.0
+	volume: 0.4
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/common/int/horn.ogg"
+	looped: true
+}
+
+sound_data: .ahorn
+{
+	name: "/sound/truck/common/int/air_horn.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/common/int/reverse.ogg"
+	looped: true
+}
+
+
+sound_data: .blinker_on
+{
+	name: "/sound/truck/common/int/blinker_on.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.2
+}
+
+sound_data: .blinker_off
+{
+	name: "/sound/truck/common/int/blinker_off.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.2
+}
+
+sound_data: .wipers_up
+{
+	name: "/sound/truck/common/int/wiper_up.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.34
+}
+
+sound_data: .wipers_down
+{
+	name: "/sound/truck/common/int/wiper_down.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.34
+}
+
+@include "/def/vehicle/truck/common_sound_int_data.sui"
+}
