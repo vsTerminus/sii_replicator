@@ -1,15 +1,15 @@
 SiiNunit
 {
-	accessory_engine_data : e9_500.%truck%.engine
+	accessory_engine_data : e9_450.%truck%.engine
 	{
-		name: "Mack E9-500"
-		price: 34200
-		unlock: 8 # Unlocks at level 8
-		info[]: "500 @@hp@@ (373@@kw@@)"
-		info[]: "1@@dg@@660 @@lb_ft@@ (2@@dg@@251 @@nm@@)"
+		name: "Mack E9-450"
+		price: 32100
+		unlock: 4 # Unlocks at level 4
+		info[]: "450 @@hp@@ (336@@kw@@)"
+		info[]: "1@@dg@@495 @@lb_ft@@ (2@@dg@@027 @@nm@@)"
 		info[]: "1@@dg@@300 @@rpm@@"
-		icon: "engmak_E9"
-		torque: 2251	# Engine power in Newton-metres
+		icon: "eng_e9"
+		torque: 2027	# Engine power in Newton-metres
 		volume:	16.4
 		
 		# Torque Curves

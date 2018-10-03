@@ -8,7 +8,7 @@ SiiNunit
 		info[]: "400 @@hp@@ (298@@kw@@)"
 		info[]: "1@@dg@@350 @@lb_ft@@ (1@@dg@@830 @@nm@@)"
 		info[]: "1@@dg@@300 @@rpm@@"
-		icon: "engmak_E9"
+		icon: "eng_e9"
 		torque: 1830	# Engine power in Newton-metres
 		volume:	16.4
 		

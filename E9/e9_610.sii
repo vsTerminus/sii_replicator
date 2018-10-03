@@ -8,7 +8,7 @@ SiiNunit
 		info[]: "610 @@hp@@ (455@@kw@@)"
 		info[]: "2@@dg@@050 @@lb_ft@@ (2@@dg@@779 @@nm@@)"
 		info[]: "1@@dg@@200-1@@dg@@300 @@rpm@@"
-		icon: "engmak_E9"
+		icon: "eng_e9"
 		torque: 2779	# Engine power in Newton-metres
 		volume:	16.4
 		
