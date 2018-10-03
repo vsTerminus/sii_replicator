@@ -1,3 +1,4 @@
+600
 argosy
 cascadia.2018
 daf.cf
@@ -24,6 +25,7 @@ ken200
 kenworth.521
 kenworth.needlenose
 kenworth.t610_gtm
+kenworth.t660.2017
 kenworth.t680
 kenworth.t800.2016
 kenworth.t800_gtm
@@ -33,6 +35,7 @@ kenworth.w900bb
 kenworth.w900b_gtm
 kraz1
 liner
+mackanthem.2018
 mackmtg
 mack.rhpl
 mack_titan
@@ -58,6 +61,7 @@ mercedes.mp2
 mersedes.1632
 next
 peter281
+peterbilt.351
 peterbilt.357
 peterbilt.359
 peterbilt.389
