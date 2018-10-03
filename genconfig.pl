@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
 use v5.10;
+use Config::Tiny;
 
 my $dir = $ARGV[0] // ".";
 say "Processing $dir/*.sii";
@@ -9,6 +10,9 @@ opendir my $dh, $dir or die "Cannot open current directory: $!";
 my @files = readdir $dh;
 closedir $dh;
 
+# Config File
+my $config_file = 'config.ini';
+my $config = Config::Tiny->read($config_file, 'utf8');
 
 my $trucks = "./trucks.txt";
 open my $fh, "<", $trucks;
@@ -38,4 +42,12 @@ foreach my $truck (@trucks)
     }
 
     `sed -i 's/%truck%/$truck/' $dir/def/vehicle/truck/$truck/*/*`;
+}
+
+if ( exists $config->{$dir} )
+{
+    my $dest = $config->{$dir}{'install_to'};
+    say "Installing mod to $dest";
+
+    `mv $dir/def $dest/`;
 }
