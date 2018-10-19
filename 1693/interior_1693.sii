@@ -182,7 +182,7 @@ sound_engine_data: .ee0
 	pitch_reference: 1100
 	min_rpm: 200.0
 	max_rpm: 3000.0
-	volume: 0.3
+	volume: 0.20
 }
 
 sound_engine_data: .el0
@@ -264,7 +264,7 @@ sound_engine_data: .eburst
 	name: "/sound/truck/engine/1693/int/burst.ogg"
 	looped: false
 	min_rpm: 20.0
-	max_rpm: 1600.0
+	max_rpm: 1100.0
 	volume: .4
 }
 
@@ -332,7 +332,7 @@ sound_data: .t
 {
 	name: "/sound/truck/engine/1693/int/T1810.ogg"
 	looped: true
-	volume: 0.20
+	volume: 0.10
 }
 
 
@@ -368,7 +368,7 @@ sound_engine_data: .bs0
 	pitch_reference: 1765
 	min_rpm: 200.0
 	max_rpm: 3000.0
-	volume: 0.4
+	volume: 0.45
 }
 
 sound_data: .horn
