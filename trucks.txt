@@ -23,6 +23,7 @@ iveco.stralis
 ken108
 ken200
 kenworth.521
+kenworth.k100
 kenworth.needlenose
 kenworth.t610_gtm
 kenworth.t660.2017
@@ -49,6 +50,7 @@ man.tgs_euro6
 man.tgx
 man.tgx2010
 man.tgx_euro6
+maz
 mercedes.1518lm
 mercedes.actros
 mercedes.actros2014
@@ -62,8 +64,8 @@ mersedes.1632
 next
 peter281
 peterbilt.351
-peterbilt.357
 peterbilt.359
+peterbilt.357
 peterbilt.389
 peterbilt.389v2
 peterbilt.567_gtm
@@ -96,6 +98,7 @@ volvo.fh16
 volvo.fh16_2012
 volvo.fh16_2013
 volvo.fh16_classic
+volvo.f88
 volvo.low
 volvo.nh12
 volvo.nl94
