@@ -14,7 +14,10 @@ closedir $dh;
 my $config_file = 'config.ini';
 my $config = Config::Tiny->read($config_file, 'utf8');
 
-my $trucks = "./trucks.txt";
+#my $trucks = "./trucks.txt";
+my $trucks = $config->{$dir}{'trucks'} // "./trucks.txt"; $trucks =~ s/"//g;
+say "Using trucks file: $trucks";
+
 open my $fh, "<", $trucks;
 my @trucks = <$fh>;
 close @trucks;
@@ -44,7 +47,7 @@ foreach my $truck (@trucks)
     `sed -i 's/%truck%/$truck/' $dir/def/vehicle/truck/$truck/*/*`;
 }
 
-if ( exists $config->{$dir} )
+if ( exists $config->{$dir}{'install_to'} )
 {
     my $dest = $config->{$dir}{'install_to'};
     say "Installing mod to $dest";

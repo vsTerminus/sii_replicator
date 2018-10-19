@@ -1,8 +1,10 @@
 [1693]
 install_to="/path/to/American Truck Simulator/mod/CAT 1693"
+trucks="/path/to/trucks.txt"
 
 [NH-220]
 install_to="/path/to/American Truck Simulator/mod/Cummins NH-220"
+trucks="/some/other/trucks.txt"
 
 [NHS-275]
 install_to="/path/to/American Truck Simulator/mod/Cummins NHS-275"
