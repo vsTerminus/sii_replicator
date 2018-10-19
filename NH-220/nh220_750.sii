@@ -72,6 +72,6 @@ SiiNunit
 		overrides[]: "/def/vehicle/truck/%truck%/sound/exterior_nh220.sii"
 		
 		# Transmission Default - Spicer 6x4 Spicer PSO140-6A AMO1750-4D
-		defaults[]: "/def/vehicle/truck/%truck%/transmission/spicer6x4_323_18speed.sii"
+		defaults[]: "/def/vehicle/truck/%truck%/transmission/spicer6x4_323_15speed.sii"
 	}
 }
