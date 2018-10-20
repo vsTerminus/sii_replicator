@@ -332,7 +332,7 @@ sound_data: .t
 {
 	name: "/sound/truck/engine/1693/int/T1810.ogg"
 	looped: true
-	volume: 0.10
+	volume: 0.20
 }
 
 
