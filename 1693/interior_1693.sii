@@ -63,6 +63,7 @@ accessory_sound_data : 1693.%truck%.isound
 	suitable_for[]: "1693_380.%truck%.engine"
 	suitable_for[]: "1693_425.%truck%.engine"
 	suitable_for[]: "1693_500.%truck%.engine"
+	suitable_for[]: "1693_675.%truck%.engine"
 }
 
 sound_data: .start
@@ -363,12 +364,12 @@ sound_data: .airbrake1
 }
 sound_engine_data: .bs0
 {
-	name: "/sound/truck/engine/1693/int/voith_retarder.ogg"
+	name: "/sound/truck/engine/1693/int/brakesaver.ogg"
 	looped: true
 	pitch_reference: 1765
 	min_rpm: 200.0
 	max_rpm: 3000.0
-	volume: 0.45
+	volume: 0.8
 }
 
 sound_data: .horn
