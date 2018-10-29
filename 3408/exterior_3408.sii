@@ -9,12 +9,26 @@ accessory_sound_data : 3408.%truck%.esound
 	stop: .stop
 	
 	engine[]: .e0
+	engine[]: .e0fade1
+	engine[]: .e0fade2
+	engine[]: .e0fade3
 	engine[]: .e1
+	engine[]: .e1fade1
+	engine[]: .e1fade2
+	engine[]: .e1fade3
+	engine[]: .e1fade4
+	engine[]: .e2
 	
 	engine_load[]: .el0
+	engine_load[]: .el0fade1
+	engine_load[]: .el0fade2
+	engine_load[]: .el0fade3
+	engine_load[]: .el0fade4
+	engine_load[]: .el0fade5
+	engine_load[]: .el0fade6
 	engine_load[]: .el1
 	engine_load[]: .eburst
-	engine_load[]: .ewhine
+
 	
 	engine_nofuel[]: .enf0
 	engine_nofuel[]: .enf1
@@ -49,61 +63,202 @@ sound_data: .start
 {
 	name: "/sound/truck/engine/3408/ext/startup.ogg"
 	looped: false
-	volume: 1.0
+	volume: 0.6
 }
 
 sound_data: .startbad
 {
 	name: "/sound/truck/engine/3408/ext/bad_start.ogg"
 	looped: false
-	volume: 1.0
+	volume: 0.6
 }
 
 sound_data: .stop
 {
 	name: "/sound/truck/engine/3408/ext/shutdown.ogg"
 	looped: false
-	volume: 0.8
+	volume: 0.5
 }
 
 sound_engine_data: .e0
 {
 	name: "/sound/truck/engine/3408/ext/idle.ogg"
 	looped: true
-	pitch_reference: 650
+	pitch_reference: 750
 	min_rpm: 100.0
-	max_rpm: 900.0
-	volume: 0.8
+	max_rpm: 905.0
+	volume: 0.25
+}
+
+sound_engine_data: .e0fade1
+{
+	name: "/sound/truck/engine/3408/ext/idle.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 895
+	max_rpm: 955
+	volume: 0.20
+}
+
+sound_engine_data: .e0fade2
+{
+	name: "/sound/truck/engine/3408/ext/idle.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 945
+	max_rpm: 1055
+	volume: 0.13
+}
+
+sound_engine_data: .e0fade3
+{
+	name: "/sound/truck/engine/3408/ext/idle.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 1045
+	max_rpm: 1155
+	volume: 0.05
 }
 
 sound_engine_data: .e1
 {
-	name: "/sound/truck/engine/3408/ext/1800rpm.ogg"
+	name: "/sound/truck/engine/3408/ext/650rpm2.ogg"
 	looped: true
-	pitch_reference: 1800
-	min_rpm: 675
-	max_rpm: 4000
-	volume: 1.0
+	pitch_reference: 750
+	min_rpm: 100
+	max_rpm: 800
+	volume: 0.35
 }
+
+sound_engine_data: .e1fade1
+{
+	name: "/sound/truck/engine/3408/ext/650rpm2.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 795
+	max_rpm: 855
+	volume: 0.30
+}
+
+sound_engine_data: .e1fade2
+{
+	name: "/sound/truck/engine/3408/ext/650rpm2.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 845
+	max_rpm: 905
+	volume: 0.23
+}
+
+sound_engine_data: .e1fade3
+{
+	name: "/sound/truck/engine/3408/ext/650rpm2.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 895
+	max_rpm: 1005
+	volume: 0.14
+}
+
+sound_engine_data: .e1fade4
+{
+	name: "/sound/truck/engine/3408/ext/650rpm2.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 995
+	max_rpm: 1105
+	volume: 0.05
+}
+
+sound_engine_data: .e2
+{
+	name: "/sound/truck/engine/3408/ext/1500rpm.ogg"
+	looped: true
+	pitch_reference: 1400
+	min_rpm: 700
+	max_rpm: 4000
+	volume: 0.6
+}
+
 
 sound_engine_data: .el0
 {
-	name: "/sound/truck/engine/3408/ext/chug-loop.ogg"
+	name: "/sound/truck/engine/3408/ext/650rpm3.ogg"
 	looped: false
-	pitch_reference: 600
+	pitch_reference: 750
 	min_rpm: 100.0
-	max_rpm: 1000.0
-	volume: 1.0
+	max_rpm: 800.0
+	volume: .5
+}
+
+sound_engine_data: .el0fade1
+{
+	name: "/sound/truck/engine/3408/ext/650rpm3.ogg"
+	looped: false
+	pitch_reference: 750
+	min_rpm: 795
+	max_rpm: 855
+	volume: .47
+}
+
+sound_engine_data: .el0fade2
+{
+	name: "/sound/truck/engine/3408/ext/650rpm3.ogg"
+	looped: false
+	pitch_reference: 750
+	min_rpm: 845
+	max_rpm: 955
+	volume: .42
+}
+
+sound_engine_data: .el0fade3
+{
+	name: "/sound/truck/engine/3408/ext/650rpm3.ogg"
+	looped: false
+	pitch_reference: 750
+	min_rpm: 945
+	max_rpm: 1055
+	volume: .35
+}
+
+sound_engine_data: .el0fade4
+{
+	name: "/sound/truck/engine/3408/ext/650rpm3.ogg"
+	looped: false
+	pitch_reference: 750
+	min_rpm: 1045
+	max_rpm: 1155
+	volume: .25
+}
+
+sound_engine_data: .el0fade5
+{
+	name: "/sound/truck/engine/3408/ext/650rpm3.ogg"
+	looped: false
+	pitch_reference: 750
+	min_rpm: 1145
+	max_rpm: 1255
+	volume: .10
+}
+
+sound_engine_data: .el0fade6
+{
+	name: "/sound/truck/engine/3408/ext/650rpm3.ogg"
+	looped: false
+	pitch_reference: 750
+	min_rpm: 1245
+	max_rpm: 1355
+	volume: .05
 }
 
 sound_engine_data: .el1
 {
-	name: "/sound/truck/engine/3408/ext/2100rpm_load.ogg"
+	name: "/sound/truck/engine/3408/ext/1500rpm2.ogg"
 	looped: true
-	pitch_reference: 2100
-	min_rpm: 950
+	pitch_reference: 1400
+	min_rpm: 700
 	max_rpm: 4000
-	volume: 1.0
+	volume: .75
 }
 
 sound_engine_data: .eburst
@@ -111,28 +266,18 @@ sound_engine_data: .eburst
 	name: "/sound/truck/engine/3408/ext/burst.ogg"
 	looped: false
 	min_rpm: 20.0
-	max_rpm: 1100.0
-	volume: 1
-}
-
-sound_engine_data: .ewhine
-{
-	name: "/sound/truck/engine/3408/ext/whine2.ogg"
-	looped: false
-	pitch_reference: 1700
-	min_rpm: 1700.0
-	max_rpm: 1900.0
-	volume: 1
+	max_rpm: 1150.0
+	volume: .5
 }
 
 sound_engine_data: .enf0
 {
-	name: "/sound/truck/engine/3408/ext/1800rpm.ogg"
+	name: "/sound/truck/engine/3408/ext/1500rpm.ogg"
 	looped: true
-	pitch_reference: 1800
+	pitch_reference: 1400
 	min_rpm: 200.0
 	max_rpm: 4000.0
-	volume: 0.75
+	volume: 0.55
 }
 
 sound_engine_data: .enf1
@@ -149,7 +294,7 @@ sound_data: .t
 {
 	name: "/sound/truck/engine/3408/ext/turbo.ogg"
 	looped: true
-	volume: .6
+	volume: .35
 }
 
 
@@ -187,7 +332,7 @@ sound_data: .airbrake2
 
 sound_engine_data: .bs0
 {
-	name: "/sound/truck/engine/3408/ext/brakesaver.ogg"
+	name: "/sound/truck/engine/3408/ext/brakesaver-loop.ogg"
 	looped: true
 	pitch_reference: 1500
 	min_rpm: 200.0
