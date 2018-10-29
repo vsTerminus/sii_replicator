@@ -1,4 +1,5 @@
 600
+9400
 argosy
 cascadia.2018
 daf.cf
@@ -63,9 +64,11 @@ mercedes.mp2
 mersedes.1632
 next
 peter281
+pet379
 peterbilt.351
 peterbilt.359
 peterbilt.357
+peterbilt.379v2
 peterbilt.389
 peterbilt.389v2
 peterbilt.567_gtm
