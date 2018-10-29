@@ -1,0 +1,255 @@
+SiiNunit
+{
+accessory_sound_data : 3408.%truck%.isound
+{
+	exterior_sound: false
+
+	start: .start
+	start_no_fuel: .startbad
+	stop: .stop
+	
+	engine[]: .e0
+	engine[]: .e1
+	
+	engine_load[]: .el0
+	engine_load[]: .el1
+	engine_load[]: .eburst
+	engine_load[]: .ewhine
+	
+	engine_nofuel[]: .enf0
+	engine_nofuel[]: .enf1
+	
+	turbo: .t
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+	air_brake[2]: .airbrake2
+
+	engine_brake[]: .bs0
+
+	horn: .horn
+	air_horn: .ahorn
+	reverse: .reverse
+	
+	blinker_on: .blinker_on
+	blinker_off: .blinker_off
+	wipers_up: .wipers_up
+	wipers_down: .wipers_down
+
+@include "/def/vehicle/truck/common_sound_int.sui"
+
+	suitable_for[]: "3408_400.%truck%.engine"
+	suitable_for[]: "3408_450.%truck%.engine"
+	suitable_for[]: "3408_500.%truck%.engine"
+	suitable_for[]: "3408_540.%truck%.engine"
+	suitable_for[]: "3408_600.%truck%.engine"
+	suitable_for[]: "3408_700.%truck%.engine"
+	suitable_for[]: "3408_800.%truck%.engine"
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/engine/3408/ext/startup.ogg"
+	looped: false
+	volume: 1.0
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/engine/3408/ext/bad_start.ogg"
+	looped: false
+	volume: 1.0
+}
+
+sound_data: .stop
+{
+	name: "/sound/truck/engine/3408/ext/shutdown.ogg"
+	looped: false
+	volume: 0.8
+}
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/engine/3408/ext/idle.ogg"
+	looped: true
+	pitch_reference: 650
+	min_rpm: 100.0
+	max_rpm: 900.0
+	volume: 0.8
+}
+
+sound_engine_data: .e1
+{
+	name: "/sound/truck/engine/3408/ext/1800rpm.ogg"
+	looped: true
+	pitch_reference: 1800
+	min_rpm: 675
+	max_rpm: 4000
+	volume: 1.0
+}
+
+sound_engine_data: .el0
+{
+	name: "/sound/truck/engine/3408/ext/chug-loop.ogg"
+	looped: false
+	pitch_reference: 600
+	min_rpm: 100.0
+	max_rpm: 1000.0
+	volume: 1.0
+}
+
+sound_engine_data: .el1
+{
+	name: "/sound/truck/engine/3408/ext/2100rpm_load.ogg"
+	looped: true
+	pitch_reference: 2100
+	min_rpm: 950
+	max_rpm: 4000
+	volume: 1.0
+}
+
+sound_engine_data: .eburst
+{
+	name: "/sound/truck/engine/3408/ext/burst.ogg"
+	looped: false
+	min_rpm: 20.0
+	max_rpm: 1100.0
+	volume: 1
+}
+
+sound_engine_data: .ewhine
+{
+	name: "/sound/truck/engine/3408/ext/whine2.ogg"
+	looped: false
+	pitch_reference: 1700
+	min_rpm: 1700.0
+	max_rpm: 1900.0
+	volume: 1
+}
+
+sound_engine_data: .enf0
+{
+	name: "/sound/truck/engine/3408/ext/1800rpm.ogg"
+	looped: true
+	pitch_reference: 1800
+	min_rpm: 200.0
+	max_rpm: 4000.0
+	volume: 0.75
+}
+
+sound_engine_data: .enf1
+{
+	name: "/sound/truck/engine/3408/ext/high-rpm-let-off.ogg"
+	looped: false
+	pitch_reference: 1800
+	min_rpm: 1700.0
+	max_rpm: 3000.0
+	volume: 0
+}
+
+sound_data: .t
+{
+	name: "/sound/truck/engine/3408/ext/turbo.ogg"
+	looped: true
+	volume: .6
+}
+
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/engine/3408/ext/gear_air_1.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airgear1
+{
+	name: "/sound/truck/engine/3408/ext/gear_air_2.ogg"
+	looped: false
+	volume: 0.04
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/engine/3408/ext/air_brake1.ogg"
+	looped: false
+}
+
+sound_data: .airbrake1
+{
+	name: "/sound/truck/engine/3408/ext/air_brake2.ogg"
+	looped: false
+}
+
+sound_data: .airbrake2
+{
+	name: "/sound/truck/engine/3408/ext/air_brake3.ogg"
+	looped: false
+}
+
+sound_engine_data: .bs0
+{
+	name: "/sound/truck/engine/3408/ext/brakesaver.ogg"
+	looped: true
+	pitch_reference: 1500
+	min_rpm: 200.0
+	max_rpm: 3000.0
+	volume: 0.8
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/common/int/horn.ogg"
+	looped: true
+}
+
+sound_data: .ahorn
+{
+	name: "/sound/truck/common/int/air_horn.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/common/int/reverse.ogg"
+	looped: true
+}
+
+
+sound_data: .blinker_on
+{
+	name: "/sound/truck/common/int/blinker_on.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.2
+}
+
+sound_data: .blinker_off
+{
+	name: "/sound/truck/common/int/blinker_off.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.2
+}
+
+sound_data: .wipers_up
+{
+	name: "/sound/truck/common/int/wiper_up.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.34
+}
+
+sound_data: .wipers_down
+{
+	name: "/sound/truck/common/int/wiper_down.ogg"
+	looped: false
+	is_2d: true
+	volume: 0.34
+}
+
+@include "/def/vehicle/truck/common_sound_int_data.sui"
+}

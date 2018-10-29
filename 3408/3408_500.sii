@@ -1,0 +1,86 @@
+SiiNunit
+{
+	/**
+	 * CAT 3408
+	 * - Introduced in the 1970s and discontinued around 1985.
+	 * - Especially popular as a marine engine
+	 * 
+	 * 3408B TA: 500 hp @ 2100 rpm, 1616 lb/ft @ 1200rpm
+	 */
+	accessory_engine_data : 3408_500.%truck%.engine
+	{
+		name: "CAT 3408B TA 500HP"
+		price: 33408	# Engine price
+		unlock: 0		# Unlocks @ Level
+
+		# Engine display info
+		info[]: "500 @@hp@@ (373@@kw@@)"
+		info[]: "1616 @@lb_ft@@ (2191 @@nm@@)"
+		info[]: "1@@dg@@400 @@rpm@@"
+		icon: "eng_3408"
+
+		# Engine Specs
+		torque: 2191	# Engine power in Newton-metres
+		volume: 18		# Engine size in liters. Used for Realistic Fuel Consumption settings
+
+		# Torque Curves
+		# I cannot find torque curves for the 3408. At best I can find bhp at a few different rpms, but no curve diagrams to be found.
+		# So this is based on torque curves from a 3412C Marine Engine (Basically a V12 version of the 3408 V8)
+		# and a slightly newer C18 which replaced the 3408.
+		# These were the closest relatives I could find torque curves for.
+		#
+		# As usual, the sheets only provide a limited range: 
+		# - 1200 to 1800 RPM on the 3412C
+		# - 1400 to 2100 RPM on the C18
+		# The rest is guesswork.
+		torque_curve[]: (250, 0.00)
+		torque_curve[]: (300, 0.36)
+		torque_curve[]: (400, 0.40)
+		torque_curve[]: (800, 0.439301)
+		torque_curve[]: (900, 0.65)
+		torque_curve[]: (1000, 0.80)
+		torque_curve[]: (1200, 1.0)
+		torque_curve[]: (1400, 1.0)
+		torque_curve[]: (1425, 0.9912673451)
+		torque_curve[]: (1450, 0.9825346901)
+		torque_curve[]: (1475, 0.9738020352)
+		torque_curve[]: (1500, 0.9650693802)
+		torque_curve[]: (1550, 0.9563367253)
+		torque_curve[]: (1600, 0.9476040703)
+		torque_curve[]: (1650, 0.9388714154)
+		torque_curve[]: (1675, 0.9301387604)
+		torque_curve[]: (1700, 0.9214061055)
+		torque_curve[]: (1750, 0.9026734505)
+		torque_curve[]: (1775, 0.8939407956)
+		torque_curve[]: (1800, 0.8852081406)
+		torque_curve[]: (1875, 0.8552918826)
+		torque_curve[]: (1900, 0.8492911877)
+		torque_curve[]: (2100, 0.7736507937)
+		torque_curve[]: (3000, 0.0)
+
+		# RPM Data
+		rpm_idle: 650			# Found proof in a video of a rock truck
+		rpm_limit: 2100			# Governed RPM limit
+		rpm_limit_neutral: 2100	# RPM limit in neutral gear
+		rpm_range_low_gear: (1600, 1900)			# Shift Points in Low Gears
+		rpm_range_high_gear: (1500, 1900)		# Shift Points in High Gears
+		rpm_range_power_boost: (0, 200)			# Run to redline under load.
+		rpm_range_engine_brake: (800, 2200)
+		
+		# Diesel Exhaust Fluid
+		adblue_consumption: 0		# No DEF yet. This engine was discontinued in 1985.
+		no_adblue_power_limit: 1.0	# No reduction in power if DEF tank is empty
+
+		# Engine Brake data
+		engine_brake: 2.0			# No Engine Brake on this truck, instead it had CAT's "Brakesaver" hydraulic retarder, which functioned like a torque converter.
+		engine_brake_downshift: 0	# Enable automatic downshift for Engine Brake
+		engine_brake_positions: 1	# The number of engine brake intensities
+
+		# Sound Data
+		overrides[]: "/def/vehicle/truck/%truck%/sound/interior_3408.sii"
+		overrides[]: "/def/vehicle/truck/%truck%/sound/exterior_3408.sii"
+		
+		# Transmission Default - Spicer 14 speed airshift
+		defaults[]: "/def/vehicle/truck/%truck%/transmission/spicer-air_463_14speed.sii"
+	}
+}

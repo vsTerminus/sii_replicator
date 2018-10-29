@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_engine_data : m11_420.%truck%.engine
+{
+	name: "Cummins M11 420"
+	price: 38500
+	unlock: 0
+	info[]: "420 @@hp@@ (246@@kw@@)"
+	info[]: "1@@dg@@550 @@lb_ft@@ (2102@@nm@@)"
+	info[]: "1@@dg@@200 @@rpm@@"
+	icon: "m11_icon"
+	torque: 1970
+	volume: 10.8	
+
+	torque_curve[]: (300, 0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (800, 0.7)
+	torque_curve[]: (1000, 0.9)
+	torque_curve[]: (1100, 1)
+	torque_curve[]: (1200, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1400, 1)
+	torque_curve[]: (1500, 0.95)
+	torque_curve[]: (1600, 0.92)
+	torque_curve[]: (1700, 0.9)
+	torque_curve[]: (1800, 0.86)
+	torque_curve[]: (2000, 0.8)
+	torque_curve[]: (2600, 0.5)
+
+	rpm_limit: 2450
+	rpm_range_low_gear: (1080, 1800)
+	rpm_range_high_gear: (1100, 1650)
+	rpm_range_power_boost: (450, 350)
+
+	engine_brake: 2.0
+	engine_brake_downshift: 1
+	rpm_range_engine_brake: (1250, 2050)	
+	engine_brake_positions: 3
+	
+	overrides[]: "/def/vehicle/truck/%truck%/sound/c_m11_int.sii"
+	overrides[]: "/def/vehicle/truck/%truck%/sound/c_m11_ext.sii"
+}
+}

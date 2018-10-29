@@ -1,0 +1,78 @@
+SiiNunit
+{
+	/**
+	 * 1998 Cummins 6BT 5.9L 12 valve turbocharged engine
+	 *
+	 * This engine was found in Dodge pickups from 1989-1998. The 6BT was also used in industrial equipment, school buses, and even OTR trucks.
+	 *
+	 * This mod is based on the 1998 model year engine, which was:
+	 * - The last year before the engine was replaced with the 24v
+	 * - Found in the 2nd gen Dodge Ram pickups from 1994 - 1998
+	 * - Intercooled 
+	 * - Came with the Bosche P7100 Injection Pump ("P-Pump")
+	 * Also, these numbers are based on the truck having a manual transmission. In an automatic it was derated to 180HP and 420lb-ft.
+	 * (Funny how the modern 6.7L engine is derated on the manual version)
+	 */
+	accessory_engine_data : 6bt_215.%truck%.engine
+	{
+		name: "Cummins 6BT 12v 215HP"
+		price: 12000	# Engine price
+		unlock: 0		# Unlocks @ Level
+
+		# Engine display info
+		info[]: "215 @@hp@@ (160@@kw@@)"
+		info[]: "440 @@lb_ft@@ (600 @@nm@@)"
+		info[]: "1@@dg@@500 @@rpm@@"
+		icon: "eng_6bt_2"
+
+		# Engine Specs
+		torque: 600  	# Engine power in Newton-metres
+		volume: 5.9		# Engine size in liters. Used for Realistic Fuel Consumption settings
+
+		# Torque Curves
+		# Based on an unmodified factory engine. 
+		# Graphs only show torque as low as 500rpm and as high as 2500rpm.
+		# However, docs also say that it makes useful power up to 2700 rpm and then drops off very sharply.
+		# So below 500 and above 2700 is mostly guesswork.
+		torque_curve[]: (250,  0.00)
+		torque_curve[]: (300,  0.36)
+		torque_curve[]: (400,  0.60)
+		torque_curve[]: (450,  0.68)
+		torque_curve[]: (500,  0.727273)
+		torque_curve[]: (750,  0.818182)
+		torque_curve[]: (1000, 0.909091)
+		torque_curve[]: (1400, 0.977273)
+		torque_curve[]: (1500, 1.000000)
+		torque_curve[]: (1600, 0.977273)
+		torque_curve[]: (2100, 0.909091)
+		torque_curve[]: (2500, 0.795455)
+		torque_curve[]: (2700, 0.727273)
+		torque_curve[]: (3000, 0.55)
+		torque_curve[]: (4000, 0.0)
+
+		# RPM Data
+		rpm_idle: 650			# Normal idle at 750, High Idle at 900
+		rpm_limit: 3000			# Governed RPM limit
+		rpm_limit_neutral: 3000	# RPM limit in neutral gear
+		rpm_range_low_gear: (1500, 2500)	# Shift Points in Low Gears
+		rpm_range_high_gear: (1500, 2500)	# Shift Points in High Gears
+		rpm_range_power_boost: (200, 200)	# Add 200rpm to each when under load.
+		rpm_range_engine_brake: (500, 3000)
+		
+		# Diesel Exhaust Fluid
+		adblue_consumption: 0		# None - No emissions on this engine until 2004.5, no DEF until 2013.
+		no_adblue_power_limit: 1.0	# No reduction in power if DEF tank is empty
+
+		# Engine Brake data
+		engine_brake: 2.0			# Engine Brake Strength
+		engine_brake_downshift: 0	# Enable automatic downshift for Engine Brake
+		engine_brake_positions: 1	# The number of engine brake intensities
+
+		# Sound Data
+		overrides[]: "/def/vehicle/truck/%truck%/sound/interior_6bt.sii"
+		overrides[]: "/def/vehicle/truck/%truck%/sound/exterior_6bt.sii"
+		
+		# Transmissions - Default to the 6 speed NV5600 Manual
+		defaults[]: "/def/vehicle/truck/%truck%/transmission/nv5600_410_6speed.sii"
+	}
+}

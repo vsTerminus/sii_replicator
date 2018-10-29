@@ -1,0 +1,36 @@
+SiiNunit
+{
+    accessory_transmission_data : spicer15_323.%truck%.transmission
+    {
+        name: "Spicer PSO140-6A AMO1750-4D 3.23"
+        price: 6401
+        unlock: 0
+        icon: "trans_spicer"
+        
+        differential_ratio: 3.23
+
+        ratios_reverse[0]: -11.8773
+        ratios_reverse[1]: -9.2628
+        ratios_reverse[2]: -7.49
+        ratios_reverse[3]: -6.0507
+ 
+        ratios_forward[0]: 11.8773
+        ratios_forward[1]: 9.2628
+        ratios_forward[2]: 7.49
+        ratios_forward[3]: 6.0507
+        ratios_forward[4]: 5.0592
+        ratios_forward[5]: 4.08
+        ratios_forward[6]: 3.3048
+        ratios_forward[7]: 2.8024
+        ratios_forward[8]: 2.26
+        ratios_forward[9]: 1.8306
+        ratios_forward[10]: 1.5376
+        ratios_forward[11]: 1.24
+        ratios_forward[12]: 1.00
+        ratios_forward[13]: .81
+        ratios_forward[14]: .68
+
+        retarder: 0
+        shift_time: 0.75
+   }
+}

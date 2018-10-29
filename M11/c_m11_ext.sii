@@ -1,0 +1,449 @@
+SiiNunit
+{
+accessory_sound_data : m11.%truck%.esound
+{
+	start: .start
+	stop: .stop
+	start_no_fuel: .startbad
+
+	engine[]: .e0
+	engine[]: .e1
+	engine[]: .e2
+	engine[]: .e3
+	engine[]: .e4
+	engine[]: .e5	
+	engine[]: .e6	
+
+	engine_load[]: .el0
+	engine_load[]: .el1
+	engine_load[]: .el2
+	engine_load[]: .el3
+	engine_load[]: .el4
+	engine_load[]: .el5
+	engine_load[]: .el6
+	engine_load[]: .el7
+	engine_load[]: .el8
+
+	engine_nofuel[]: .enf0
+	engine_nofuel[]: .enf1
+	engine_nofuel[]: .enf2
+	engine_nofuel[]: .enf3
+
+	turbo: .t
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+	air_gear[2]: .airgear2
+	
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+    air_brake[2]: .airbrake2
+	air_brake[3]: .airbrake3
+
+	engine_brake[]: .eb0
+	engine_brake[]: .eb1
+	engine_brake[]: .eb2
+
+	horn: .horn
+	air_horn: .ahorn
+
+	reverse: .reverse
+	
+	exterior_sound: true
+
+
+@include "/def/vehicle/truck/common_sound_ext.sui"
+	
+	suitable_for[]: "m11_370.%truck%.engine"
+	suitable_for[]: "m11_420.%truck%.engine"
+	suitable_for[]: "m11_500.%truck%.engine"
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/Cum_M11/ext/engine_on.ogg"
+	looped: false
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/Cum_M11/ext/engine_on_bad.ogg"
+	looped: false
+}
+
+
+sound_data: .stop
+{
+	name: "/sound/truck/Cum_M11/ext/engine_off.ogg"
+	looped: false
+}
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/Cum_M11/ext/500rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 650
+
+	min_rpm: 350.0
+	max_rpm: 840.0
+	volume: 0.42
+}
+
+sound_engine_data: .e1
+{
+	name: "/sound/truck/Cum_M11/ext/800rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 800
+
+	min_rpm: 670.0
+	max_rpm: 1120.0
+	volume: 0.35
+}
+
+sound_engine_data: .e2
+{
+	name: "/sound/truck/Cum_M11/ext/1000rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 955
+
+	min_rpm: 790.0
+	max_rpm: 1315.0
+	volume: 0.37
+}
+
+sound_engine_data: .e3
+{
+	name: "/sound/truck/Cum_M11/ext/1500rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 1700
+
+	min_rpm: 1090.0
+	max_rpm: 1910.0
+	volume: 0.55
+}
+
+sound_engine_data: .e4
+{
+	name: "/sound/truck/Cum_M11/int/2000rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 1930
+
+	min_rpm: 1520.0
+	max_rpm: 2420.0
+	volume: 0.58
+}
+
+sound_engine_data: .e5
+{
+	name: "/sound/truck/Cum_M11/ext/2200_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 2620
+
+	min_rpm: 1900.0
+	max_rpm: 3100.0
+	volume: 0.7
+}
+
+sound_engine_data: .e6
+{
+	name: "/sound/truck/Cum_M11/ext/turbo_idle.ogg"
+
+	looped: true
+
+	pitch_reference: 1360
+
+	min_rpm: 350.0
+	max_rpm: 3200.0
+	volume: 0.25
+}
+
+sound_engine_data: .el0
+{
+	name: "/sound/truck/Cum_M11/ext/turbo_idle.ogg"
+
+	looped: true
+
+	pitch_reference: 1360
+
+	min_rpm: 300.0
+	max_rpm: 3000.0
+	volume: 0.2
+}
+
+sound_engine_data: .el1
+{
+	name: "/sound/truck/Cum_M11/ext/exhaust_idle.ogg"
+
+	looped: true
+
+	pitch_reference: 660
+	is_2d: true
+	min_rpm: 350.0
+	max_rpm: 995.0
+	volume: 0.76
+}
+
+sound_engine_data: .el2
+{
+	name: "/sound/truck/Cum_M11/ext/1000_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1155
+	is_2d: true
+	min_rpm: 785.0
+	max_rpm: 1290.0
+	volume: 0.79
+}
+
+sound_engine_data: .el3
+{
+	name: "/sound/truck/Cum_M11/ext/1200_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1280
+	is_2d: true
+	min_rpm: 1000.0
+	max_rpm: 1400.0
+	volume: 0.85
+}
+
+sound_engine_data: .el4
+{
+	name: "/sound/truck/Cum_M11/ext/1400_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1390
+	is_2d: true
+	min_rpm: 1275.0
+	max_rpm: 1535.0
+	volume: 0.92
+}
+
+sound_engine_data: .el5
+{
+	name: "/sound/truck/Cum_M11/ext/1600_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1530
+	is_2d: true
+	min_rpm: 1365.0
+	max_rpm: 1720.0
+	volume: 0.92
+}
+
+sound_engine_data: .el6
+{
+	name: "/sound/truck/Cum_M11/ext/1700_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1690
+	is_2d: true
+	min_rpm: 1465.0
+	max_rpm: 1890.0
+	volume: 1.1
+}
+
+sound_engine_data: .el7
+{
+	name: "/sound/truck/Cum_M11/ext/1800_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 1895
+	is_2d: true
+	min_rpm: 1675.0
+	max_rpm: 2250.0
+	volume: 1.35
+}
+
+sound_engine_data: .el8
+{
+	name: "/sound/truck/Cum_M11/ext/2200_exhaust.ogg"
+
+	looped: true
+
+	pitch_reference: 2620
+	is_2d: true
+	min_rpm: 1810.0
+	max_rpm: 3000.0
+	volume: 1.22
+}
+
+sound_engine_data: .enf0
+{
+	name: "/sound/truck/Cum_M11/ext/gear_air.ogg"
+
+	looped: true
+
+	min_rpm: 750.0
+	max_rpm: 3300.0
+	volume: 0.24
+}
+
+sound_engine_data: .enf1
+{
+	name: "/sound/truck/Cum_M11/ext/1000rpm.ogg"
+
+	looped: true
+
+	pitch_reference: 955
+
+	min_rpm: 320.0
+	max_rpm: 1210.0
+	volume: 0.26
+}
+
+sound_engine_data: .enf2
+{
+	name: "/sound/truck/Cum_M11/ext/lever_le_pied.ogg"
+
+	looped: true
+
+	min_rpm: 730.0
+	max_rpm: 3100.0
+	pitch_reference:  1455
+	volume: 0.54
+}
+
+sound_engine_data: .enf3
+{
+	name: "/sound/truck/Cum_M11/ext/turbo_idle.ogg"
+
+	looped: true
+
+	pitch_reference: 1360
+
+	min_rpm: 350.0
+	max_rpm: 3600.0
+	volume: 0.4
+}
+
+sound_data: .t
+{
+	name: "/sound/truck/Cum_M11/ext/turbo_ext.ogg"
+	looped: true
+
+	volume: 0.24
+}
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/Cum_M11/ext/gear_air_1.ogg"
+		volume: 0.25
+}
+
+sound_data: .airgear1
+{
+	name: "/sound/truck/Cum_M11/ext/gear_air_2.ogg"
+		volume: 0.04
+}
+
+sound_data: .airgear2
+{
+	name: "/sound/truck/Cum_M11/ext/gear_air_3.ogg"
+		volume: 0.04
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/Cum_M11/ext/air_brake1.ogg"
+
+	looped: false
+}
+
+sound_data: .airbrake1
+{
+	name: "/sound/truck/Cum_M11/ext/air_brake2.ogg"
+
+	looped: false
+}
+
+sound_data: .airbrake2
+{
+	name: "/sound/truck/Cum_M11/ext/air_brake3.ogg"
+
+	looped: false
+}
+
+sound_data: .airbrake3
+{
+	name: "/sound/truck/Cum_M11/ext/air_brake4.ogg"
+
+	looped: false
+}
+
+sound_engine_data: .eb0
+{
+	name: "/sound/truck/Cum_M11/ext/jake_0.ogg"
+	looped: true
+	is_2d: true
+	pitch_reference: 1180
+	min_rpm: 780.0
+	max_rpm: 1400.0
+
+	volume: 0.62
+}
+
+sound_engine_data: .eb1
+{
+	name: "/sound/truck/Cum_M11/ext/jake_1.ogg"
+	looped: true
+	is_2d: true
+	pitch_reference: 1390
+	min_rpm: 1130.0
+	max_rpm: 1840.0
+
+	volume: 0.64
+}
+
+sound_engine_data: .eb2
+{
+	name: "/sound/truck/Cum_M11/ext/jake_2.ogg"
+	looped: true
+	is_2d: true
+	pitch_reference: 1855
+	min_rpm: 1330.0
+	max_rpm: 3100.0
+
+	volume: 1.0
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/Cum_M11/ext/horn.ogg"
+	looped: true
+}
+
+sound_data: .ahorn
+{
+	name: "/sound/truck/Cum_M11/ext/air_horn.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/Cum_M11/ext/reverse.ogg"
+	looped: true
+}
+
+@include "/def/vehicle/truck/common_sound_ext_data.sui"
+
+}
+

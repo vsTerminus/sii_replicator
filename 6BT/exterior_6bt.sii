@@ -1,0 +1,166 @@
+SiiNunit
+{
+accessory_sound_data : 6bt.%truck%.esound
+{
+	exterior_sound: true
+
+	start: .start
+	start_no_fuel: .startbad
+	stop: .stop
+	
+	engine[]: .e0
+	
+	engine_exhaust[]: .ee0
+	
+	engine_load[]: .el0
+	
+	engine_nofuel[]: .enf0
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+	air_brake[2]: .airbrake2
+	air_brake[3]: .airbrake3
+
+	engine_brake[]: .eb0
+
+	horn: .horn
+	air_horn: .ahorn
+	reverse: .reverse
+
+@include "/def/vehicle/truck/common_sound_ext.sui"
+
+	suitable_for[]: "6bt_215.%truck%.engine"
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/engine/6BT/ext/startup.ogg"
+	looped: false
+	volume: 1
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/engine/6BT/ext/bad-start.ogg"
+	looped: false
+	volume: 0.5
+}
+
+sound_data: .stop
+{
+	name: "/sound/truck/engine/6BT/ext/engine_off.ogg"
+	looped: false
+	volume: 0.5
+}
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/engine/6BT/ext/idle_best.ogg"
+	looped: true
+	pitch_reference: 650
+	min_rpm: 100.0
+	max_rpm: 1200.0
+	volume: 0.8
+}
+
+sound_engine_data: .ee0
+{
+	name: "/sound/truck/engine/6BT/ext/idle_exhaust2.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 1000.0
+	max_rpm: 5000.0
+	volume: 0.8
+}
+
+sound_engine_data: .el0
+{
+	name: "/sound/truck/engine/6BT/ext/1600rpm_greg_a.ogg"
+	looped: true
+	pitch_reference: 1600
+	min_rpm: 1000
+	max_rpm: 5000
+	volume: 1.0
+}
+
+sound_engine_data: .enf0
+{
+	name: "/sound/truck/engine/6BT/ext/idle_best.ogg"
+	looped: true
+	pitch_reference: 650
+	min_rpm: 100.0
+	max_rpm: 5000.0
+	volume: 0.8
+}
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/engine/6BT/ext/gear_air_1.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airgear1
+{
+	name: "/sound/truck/engine/6BT/ext/gear_air_2.ogg"
+	looped: false
+	volume: 0.25
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/common/ext/air_brake1.ogg"
+	looped: false
+}
+
+sound_data: .airbrake1
+{
+	name: "/sound/truck/common/ext/air_brake2.ogg"
+	looped: false
+}
+
+sound_data: .airbrake2
+{
+	name: "/sound/truck/common/ext/air_brake3.ogg"
+	looped: false
+}
+
+sound_data: .airbrake3
+{
+	name: "/sound/truck/common/ext/air_brake4.ogg"
+	looped: false
+}
+
+sound_engine_data: .eb0
+{
+	name: "/sound/truck/engine/6BT/ext/exhaust_brake.ogg"
+	looped: true
+	pitch_reference: 750
+	min_rpm: 100.0
+	max_rpm: 5000.0
+	volume: 1.0
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/common/ext/horn.ogg"
+	looped: true
+}
+
+sound_data: .ahorn
+{
+	name: "/sound/truck/common/ext/air_horn.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/common/ext/reverse.ogg"
+	looped: true
+}
+
+@include "/def/vehicle/truck/common_sound_ext_data.sui"
+}
