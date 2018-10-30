@@ -52,5 +52,6 @@ if ( exists $config->{$dir}{'install_to'} )
     my $dest = $config->{$dir}{'install_to'};
     say "Installing mod to $dest";
 
+    `rm -r $dest/def`;
     `mv $dir/def $dest/`;
 }
