@@ -1,0 +1,83 @@
+[h1]Supported Trucks[/h1]
+
+[u]Vanilla ATS:[/u]
+- Kenworth T680
+- Kenworth W900
+- Peterbilt 389
+- Peterbilt 579
+
+[u]Vanilla ETS2:[/u]
+- DAF XF 105
+- DAF XF Euro 6
+- Iveco Stralis
+- Iveco Hi-Way
+- MAN TGX
+- Mercedes Actros
+- Mercedes New Actros
+- Renault Magnum
+- Renault Premium
+- Scania R 2012
+- Scania Streamline
+- Scania R 2016
+- Scania S 2016
+- Volvo FH16 2009
+- Volvo FH16 2014
+
+[u]Modded:[/u]
+- DAF CF (RTA)
+- Freightliner Argosy
+- Freightliner Cascadia 2018
+- Freightliner Columbia
+- Freightliner Classic XL
+- Freightliner Coronado
+- Freightliner FLB
+- Freightliner FLD
+- International 9400i
+- International 9800
+- International 9900
+- Kenworth 521
+- Kenworth K100
+- Kenworth K108 (RTA)
+- Kenworth K200 (RTA)
+- Kenworth Needle Nose
+- Kenworth T600
+- Kenworth T610 (GTM)
+- Kenworth T660
+- Kenworth T800 (GTM)
+- Kenworth T800 2016 (ModSaver)
+- Kenworth W900A
+- Kenworth W900B (GTM)
+- Kenworth W900L "Big Bob Edition"
+- KRAZ 64431 AZOV
+- Mack Anthem
+- Mack B61
+- Mack R Series (Harven)
+- Mack RS700l
+- Mack Rubber Duck
+- Mack Superliner
+- Mack Titan
+- Mack Ultraliner
+- MAN TGA
+- MAN TGX Euro 6
+- Mercedes MP1
+- Mercedes MP2
+- Oshkosh Defense HEMTT
+- Peterbilt 281
+- Peterbilt 351
+- Peterbilt 357
+- Peterbilt 359
+- Peterbilt 379 EXHD
+- Peterbilt 379 (Outlaw)
+- Peterbilt 389 (Viper2)
+- Peterbilt 567 (GTM)
+- Scania RS (RJL)
+- Scania T
+- Scot A2HD
+- Sisu R500 C500 C600
+- Ural Next
+- Volvo F88
+- Volvo VNL 2019
+- Volvo VNL670 (Aradeth)
+- Volvo VNR
+- Western Star 4900
+- Zil 157
