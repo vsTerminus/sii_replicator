@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Quick script to build all production engines.
+
+DATE=`date +%F`
+ATS_DIR="/path/to/American Truck Simulator"
+NH220_DIR="$ATS_DIR/mod/Cummins NH-220"
+NHS275_DIR="$ATS_DIR/mod/Cummins NHS-275"
+ME9_DIR="$ATS_DIR/mod/Mack E9 V8"
+C1693_DIR="$ATS_DIR/mod/CAT 1693"
+WORKSHOP_DIR="/path/to/My Workshop"
+
+# Build new ones
+echo "Building NH-220"
+perl genconfig.pl NH-220 >> /dev/null 2>&1
+echo "Building NHS-275"
+perl genconfig.pl NHS-275 >> /dev/null 2>&1
+echo "Building E9"
+perl genconfig.pl E9 >> /dev/null 2>&1
+echo "Building 1693"
+perl genconfig.pl 1693 >> /dev/null 2>&1
+
+# Update workshop directory
+echo "Updating NH-220 Workshop"
+cp -r "$NH220_DIR/def" "$NH220_DIR/material" "$NH220_DIR/sound" "$WORKSHOP_DIR/Cummins NH-220/universal/"
+echo "Updating NHS-275 Workshop"
+cp -r "$NHS275_DIR/def" "$NHS275_DIR/material" "$NHS275_DIR/sound" "$WORKSHOP_DIR/Cummins NHS-275/universal/"
+echo "Updating E9 Workshop"
+cp -r "$ME9_DIR/def" "$ME9_DIR/material" "$ME9_DIR/sound" "$WORKSHOP_DIR/Mack E9 V8/universal/"
+echo "Updating 1693 Workshop"
+cp -r "$C1693_DIR/def" "$C1693_DIR/material" "$C1693_DIR/sound" "$WORKSHOP_DIR/CAT 1693/universal/"
+
+# Update manifest date
+echo "Updating manifest dates"
+sed -i 's/[0-9]\+-[0-9]\+-[0-9]\+/'"$DATE"'/' "$WORKSHOP_DIR/Cummins NH-220/universal/manifest.sii"
+sed -i 's/[0-9]\+-[0-9]\+-[0-9]\+/'"$DATE"'/' "$WORKSHOP_DIR/Cummins NHS-275/universal/manifest.sii"
+sed -i 's/[0-9]\+-[0-9]\+-[0-9]\+/'"$DATE"'/' "$WORKSHOP_DIR/Mack E9 V8/universal/manifest.sii"
+sed -i 's/[0-9]\+-[0-9]\+-[0-9]\+/'"$DATE"'/' "$WORKSHOP_DIR/CAT 1693/universal/manifest.sii"
+
+# Create zips
+echo "Creating zip file for NH-220"
+7z a -tzip "$WORKSHOP_DIR/Cummins NH-220 $DATE.zip" "$WORKSHOP_DIR/Cummins NH-220/universal/*" >> /dev/null 2>&1
+echo "Creating zip file for NHS-275"
+7z a -tzip "$WORKSHOP_DIR/Cummins NHS-275 $DATE.zip" "$WORKSHOP_DIR/Cummins NHS-275/universal/*" >> /dev/null 2>&1
+echo "Creating zip file for E9"
+7z a -tzip "$WORKSHOP_DIR/Mack E9 $DATE.zip" "$WORKSHOP_DIR/Mack E9 V8/universal/*" >> /dev/null 2>&1
+echo "Creating zip file for 1693"
+7z a -tzip "$WORKSHOP_DIR/CAT 1693 $DATE.zip" "$WORKSHOP_DIR/CAT 1693/universal/*" >> /dev/null 2>&1
+
