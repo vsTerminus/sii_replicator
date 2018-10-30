@@ -1,15 +1,5 @@
 freightliner.flb
-freightliner.fld
+cascadia.2018
 kenworth.k100
-kenworth.t610_gtm
-kenworth.t680
-kenworth.t800_gtm
-kenworth.w900
-kenworth.w900b_gtm
 mackanthem.2018
 mack.rhpl
-peterbilt.351
-peterbilt.389
-peterbilt.389v2
-peterbilt.567_gtm
-peterbilt.579
