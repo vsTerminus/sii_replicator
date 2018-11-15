@@ -5,6 +5,7 @@
 - Kenworth W900
 - Peterbilt 389
 - Peterbilt 579
+- Volvo VNL
 
 [u]Vanilla ETS2:[/u]
 - DAF XF 105
@@ -48,6 +49,7 @@
 - Kenworth W900A
 - Kenworth W900B (GTM)
 - Kenworth W900L "Big Bob Edition"
+- Kenworth W990
 - KRAZ 64431 AZOV
 - Mack Anthem
 - Mack B61
@@ -74,6 +76,7 @@
 - Scania T
 - Scot A2HD
 - Sisu R500 C500 C600
+- Tesla Semi
 - Ural Next
 - Volvo F88
 - Volvo VNL 2019

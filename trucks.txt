@@ -91,6 +91,7 @@ scania.t4
 scania.vabis
 scot.a2hd
 sisu.r500
+tesla.2019
 vnl
 vnl660argosy
 volvo.b9r_salar
@@ -105,10 +106,12 @@ volvo.f88
 volvo.low
 volvo.nh12
 volvo.nl94
+volvo.vnl
 volvo_vnl
 volvo.vnl780
 volvo.vnl2018
 volvo_vnr
 volvo.x
+w990
 western.4900
 zil
