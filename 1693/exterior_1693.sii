@@ -167,7 +167,7 @@ sound_engine_data: .e8
 	name: "/sound/truck/engine/1693/ext/idle2-hpf.ogg"
 	looped: true
 	min_rpm: 100.0
-	max_rpm: 575.0
+	max_rpm: 675.0
 	volume: 0.4
 }
 
@@ -329,7 +329,7 @@ sound_data: .t
 {
 	name: "/sound/truck/engine/1693/ext/T1810.ogg"
 	looped: true
-	volume: 0.30
+	volume: 0.3
 }
 
 

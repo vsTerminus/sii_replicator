@@ -172,7 +172,7 @@ sound_engine_data: .e8
 	name: "/sound/truck/engine/1693/int/idle2-hpf.ogg"
 	looped: true
 	min_rpm: 100.0
-	max_rpm: 575.0
+	max_rpm: 675.0
 	volume: 0.4
 }
 
@@ -369,7 +369,7 @@ sound_engine_data: .bs0
 	pitch_reference: 1765
 	min_rpm: 200.0
 	max_rpm: 3000.0
-	volume: 0.8
+	volume: 0.2
 }
 
 sound_data: .horn
