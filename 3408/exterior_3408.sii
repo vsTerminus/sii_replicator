@@ -31,7 +31,6 @@ accessory_sound_data : 3408.%truck%.esound
 
 	
 	engine_nofuel[]: .enf0
-	engine_nofuel[]: .enf1
 	
 	turbo: .t
 
@@ -174,7 +173,7 @@ sound_engine_data: .e2
 {
 	name: "/sound/truck/engine/3408/ext/1500rpm.ogg"
 	looped: true
-	pitch_reference: 1400
+	pitch_reference: 1600
 	min_rpm: 700
 	max_rpm: 4000
 	volume: 0.6
@@ -188,7 +187,7 @@ sound_engine_data: .el0
 	pitch_reference: 750
 	min_rpm: 100.0
 	max_rpm: 800.0
-	volume: .5
+	volume: .55
 }
 
 sound_engine_data: .el0fade1
@@ -253,9 +252,9 @@ sound_engine_data: .el0fade6
 
 sound_engine_data: .el1
 {
-	name: "/sound/truck/engine/3408/ext/1500rpm2.ogg"
+	name: "/sound/truck/engine/3408/ext/1500rpm3.ogg"
 	looped: true
-	pitch_reference: 1400
+	pitch_reference: 1600
 	min_rpm: 700
 	max_rpm: 4000
 	volume: .75
@@ -274,27 +273,17 @@ sound_engine_data: .enf0
 {
 	name: "/sound/truck/engine/3408/ext/1500rpm.ogg"
 	looped: true
-	pitch_reference: 1400
+	pitch_reference: 1600
 	min_rpm: 200.0
 	max_rpm: 4000.0
 	volume: 0.55
 }
 
-sound_engine_data: .enf1
-{
-	name: "/sound/truck/engine/3408/ext/high-rpm-let-off.ogg"
-	looped: false
-	pitch_reference: 1800
-	min_rpm: 1700.0
-	max_rpm: 3000.0
-	volume: 0
-}
-
 sound_data: .t
 {
-	name: "/sound/truck/engine/3408/ext/turbo.ogg"
+	name: "/sound/truck/engine/3408/ext/T1810.ogg"
 	looped: true
-	volume: .35
+	volume: .04
 }
 
 
@@ -334,10 +323,10 @@ sound_engine_data: .bs0
 {
 	name: "/sound/truck/engine/3408/ext/brakesaver-loop.ogg"
 	looped: true
-	pitch_reference: 1500
+	pitch_reference: 1700
 	min_rpm: 200.0
 	max_rpm: 3000.0
-	volume: 0.8
+	volume: 0.08
 }
 
 sound_data: .horn
