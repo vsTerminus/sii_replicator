@@ -23,7 +23,9 @@ iveco.s
 iveco.stralis
 ken108
 ken200
+kenw908
 kenworth.521
+kenworth.c500
 kenworth.k100
 kenworth.needlenose
 kenworth.t610_gtm
@@ -39,6 +41,7 @@ kraz1
 liner
 mackanthem.2018
 mackmtg
+mack.chu613
 mack.rhpl
 mack_titan
 mack.ultraliner
@@ -64,8 +67,11 @@ mercedes.mp2
 mersedes.1632
 next
 peter281
+pete.377
 pet379
 peterbilt.351
+peterbilt.352jdm
+peterbilt.359jdm
 peterbilt.359
 peterbilt.357
 peterbilt.379v2
@@ -77,6 +83,7 @@ renault.magnum
 renault.premium
 rs
 s580
+scania.112hw
 scania.143m
 scania.50k_r_high
 scania.k

@@ -37,6 +37,7 @@
 - International 9800
 - International 9900
 - Kenworth 521
+- Kenworth C500 (JDM)
 - Kenworth K100
 - Kenworth K108 (RTA)
 - Kenworth K200 (RTA)
@@ -46,6 +47,7 @@
 - Kenworth T660
 - Kenworth T800 (GTM)
 - Kenworth T800 2016 (ModSaver)
+- Kenworth T908 (RTA)
 - Kenworth W900A
 - Kenworth W900B (GTM)
 - Kenworth W900L "Big Bob Edition"
@@ -53,6 +55,7 @@
 - KRAZ 64431 AZOV
 - Mack Anthem
 - Mack B61
+- Mack Pinnacle CHU 613 (Frank Peru)
 - Mack R Series (Harven)
 - Mack RS700l
 - Mack Rubber Duck
@@ -66,12 +69,16 @@
 - Oshkosh Defense HEMTT
 - Peterbilt 281
 - Peterbilt 351
+- Peterbilt 352 (JDM)
 - Peterbilt 357
-- Peterbilt 359
+- Peterbilt 359 (JDM)
+- Peterbilt 359 (RTA)
+- Peterbilt 377
 - Peterbilt 379 EXHD
 - Peterbilt 379 (Outlaw)
 - Peterbilt 389 (Viper2)
 - Peterbilt 567 (GTM)
+- Scania Series 2 (112-142)
 - Scania RS (RJL)
 - Scania T
 - Scot A2HD
