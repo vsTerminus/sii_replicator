@@ -5,7 +5,7 @@ SiiNunit
 	 * - Introduced in the 1970s and discontinued around 1985.
 	 * - Especially popular as a marine engine
 	 * 
-	 * 3408B TA: 540 hp @ 2100 rpm, 1616 lb/ft @ 1200rpm
+	 * 3408B TA: 540 hp @ 2100 rpm, 1746 lb/ft @ 1400rpm
 	 */
 	accessory_engine_data : 3408_540.%truck%.engine
 	{
@@ -81,6 +81,6 @@ SiiNunit
 		overrides[]: "/def/vehicle/truck/%truck%/sound/exterior_3408.sii"
 		
 		# Transmission Default - Spicer 14 speed airshift
-		defaults[]: "/def/vehicle/truck/%truck%/transmission/spicer-air_463_14speed.sii"
+		defaults[]: "/def/vehicle/truck/%truck%/transmission/spicer6x4_373_15speed.sii"
 	}
 }
