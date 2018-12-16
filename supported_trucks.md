@@ -1,13 +1,13 @@
-[h1]Supported Trucks[/h1]
+#Supported Trucks
 
-[u]Vanilla ATS:[/u]
+##Vanilla ATS
 - Kenworth T680
 - Kenworth W900
 - Peterbilt 389
 - Peterbilt 579
 - Volvo VNL
 
-[u]Vanilla ETS2:[/u]
+##Vanilla ETS2
 - DAF XF 105
 - DAF XF Euro 6
 - Iveco Stralis
@@ -24,7 +24,7 @@
 - Volvo FH16 2009
 - Volvo FH16 2014
 
-[u]Modded:[/u]
+##Modded
 - DAF CF (RTA)
 - Freightliner Argosy
 - Freightliner Cascadia 2018
