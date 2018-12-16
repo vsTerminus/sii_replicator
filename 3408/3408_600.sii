@@ -35,8 +35,9 @@ SiiNunit
 		# The rest is guesswork.
 		torque_curve[]: (250, 0.00)
 		torque_curve[]: (300, 0.36)
-		torque_curve[]: (400, 0.40)
-		torque_curve[]: (800, 0.439301)
+		torque_curve[]: (500, 0.50)
+		torque_curve[]: (650, 0.55)
+		torque_curve[]: (800, 0.60)
 		torque_curve[]: (900, 0.65)
 		torque_curve[]: (1000, 0.80)
 		torque_curve[]: (1200, 1.0)

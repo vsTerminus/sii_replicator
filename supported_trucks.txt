@@ -48,6 +48,7 @@
 - Kenworth T800 (GTM)
 - Kenworth T800 2016 (ModSaver)
 - Kenworth T908 (RTA)
+- Kenworth "The Phantom"
 - Kenworth W900A
 - Kenworth W900B (GTM)
 - Kenworth W900L "Big Bob Edition"
@@ -81,13 +82,19 @@
 - Scania Series 2 (112-142)
 - Scania RS (RJL)
 - Scania T
+- Scania Touring (Bus)
 - Scot A2HD
 - Sisu R500 C500 C600
 - Tesla Semi
 - Ural Next
 - Volvo F88
+- Volvo VNL 2018
 - Volvo VNL 2019
 - Volvo VNL670 (Aradeth)
 - Volvo VNR
+- Western Star 4800
 - Western Star 4900
+- Zil 130
+- Zil 131
+- Zil 133
 - Zil 157

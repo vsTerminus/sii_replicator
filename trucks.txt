@@ -1,4 +1,5 @@
 600
+4800w
 9400
 argosy
 cascadia.2018
@@ -14,6 +15,7 @@ freightliner.coronado
 freightliner.flb
 freightliner.fld
 freight.xl
+hotw9
 inter.9900
 internat9800
 iveco.19038
@@ -95,6 +97,7 @@ scania.s_2016
 scania.streamline
 scania.t
 scania.t4
+scania.touring
 scania.vabis
 scot.a2hd
 sisu.r500
@@ -117,8 +120,12 @@ volvo.vnl
 volvo_vnl
 volvo.vnl780
 volvo.vnl2018
+volvo.vnl.2018
 volvo_vnr
 volvo.x
 w990
 western.4900
 zil
+zil130
+zil131
+zil133
