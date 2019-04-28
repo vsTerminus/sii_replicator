@@ -25,7 +25,9 @@
 - Volvo FH16 2014
 
 ## Modded
+- CAT CT600 XL
 - DAF CF (RTA)
+- Ford F-Max
 - Freightliner Argosy
 - Freightliner Cascadia 2018
 - Freightliner Columbia
@@ -36,6 +38,7 @@
 - International 9400i
 - International 9800
 - International 9900
+- International Lonestar
 - Kenworth 521
 - Kenworth C500 (JDM)
 - Kenworth K100
@@ -45,8 +48,10 @@
 - Kenworth T600
 - Kenworth T610 (GTM)
 - Kenworth T660
+- Kenworth T800 (dmitry68)
 - Kenworth T800 (GTM)
-- Kenworth T800 2016 (ModSaver)
+- Kenworth T800 2016 (Modsaver or Yanred)
+- Kenworth T880
 - Kenworth T908 (RTA)
 - Kenworth "The Phantom"
 - Kenworth W900A
@@ -79,11 +84,13 @@
 - Peterbilt 379 (Outlaw)
 - Peterbilt 389 (Viper2)
 - Peterbilt 567 (GTM)
+- Roman Diesel
 - Scania Series 2 (112-142)
 - Scania RS (RJL)
 - Scania T
 - Scania Touring (Bus)
 - Scot A2HD
+- Sisu M-Series
 - Sisu R500 C500 C600
 - Tesla Semi
 - Ural Next
