@@ -12,6 +12,8 @@ daf.xf_euro6
 duck
 ford.fmax
 f150_2017
+f700
+fred
 freightliner
 freightliner.coronado
 freightliner.flb
@@ -51,6 +53,7 @@ mackmtg
 mack.chu613
 mack.rhpl
 mack_titan
+mack.trident
 mack.ultraliner
 man.520
 man.f90

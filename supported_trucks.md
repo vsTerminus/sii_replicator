@@ -30,6 +30,7 @@
 - Ford F-Max
 - Freightliner Argosy
 - Freightliner Cascadia 2018
+- Freightliner Century
 - Freightliner Columbia
 - Freightliner Classic XL
 - Freightliner Coronado
@@ -61,12 +62,14 @@
 - KRAZ 64431 AZOV
 - Mack Anthem
 - Mack B61
+- Mack F 700
 - Mack Pinnacle CHU 613 (Frank Peru)
 - Mack R Series (Harven)
 - Mack RS700l
 - Mack Rubber Duck
 - Mack Superliner
 - Mack Titan
+- Mack Trident
 - Mack Ultraliner
 - MAN TGA
 - MAN TGX Euro 6
