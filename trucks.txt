@@ -110,6 +110,7 @@ scania.touring
 scania.vabis
 scot.a2hd
 sisu.r500
+sisu.m
 tesla.2019
 vnl
 vnl660argosy
