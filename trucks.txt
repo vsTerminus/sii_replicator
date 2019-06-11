@@ -15,6 +15,7 @@ f150_2017
 f700
 fred
 freightliner
+freightliner.cascadia.2018
 freightliner.coronado
 freightliner.flb
 freightliner.fld
