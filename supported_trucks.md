@@ -29,7 +29,7 @@
 - DAF CF (RTA)
 - Ford F-Max
 - Freightliner Argosy
-- Freightliner Cascadia 2018
+- Freightliner Cascadia 2018 (Original and UltraBald)
 - Freightliner Century
 - Freightliner Columbia
 - Freightliner Classic XL
@@ -46,6 +46,7 @@
 - Kenworth K108 (RTA)
 - Kenworth K200 (RTA)
 - Kenworth Needle Nose
+- Kenworth T408 (RTA)
 - Kenworth T600
 - Kenworth T610 (GTM)
 - Kenworth T660
@@ -89,6 +90,7 @@
 - Peterbilt 567 (GTM)
 - Roman Diesel
 - Scania Series 2 (112-142)
+- Scania 112-113H
 - Scania RS (RJL)
 - Scania T
 - Scania Touring (Bus)

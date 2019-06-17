@@ -30,6 +30,7 @@ iveco.s
 iveco.stralis
 ken108
 ken200
+kenw408
 kenw908
 kenworth.521
 kenworth.c500
@@ -104,6 +105,7 @@ scania.r_2016
 scania.r4
 scania.rs
 scania.s_2016
+scania.southgamer
 scania.streamline
 scania.t
 scania.t4
