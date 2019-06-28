@@ -59,7 +59,8 @@
 - Kenworth W900A
 - Kenworth W900B (GTM)
 - Kenworth W900L "Big Bob Edition"
-- Kenworth W990
+- Kenworth W990 (Frank Peru)
+- Kenworth W990 (Harven)
 - KRAZ 64431 AZOV
 - Mack Anthem
 - Mack B61

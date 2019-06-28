@@ -47,6 +47,7 @@ kenworth.w900
 kenworth.w900a
 kenworth.w900bb
 kenworth.w900b_gtm
+kenworth.w990
 kraz1
 lone.star
 liner
