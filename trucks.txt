@@ -23,6 +23,7 @@ freight.xl
 hotw9
 inter.9900
 internat9800
+internationl.lt.2019
 iveco.19038
 iveco.hiway
 iveco.nissan
@@ -35,6 +36,8 @@ kenw908
 kenworth.521
 kenworth.c500
 kenworth.k100
+kenworth.k100e_of
+kenworth.long
 kenworth.needlenose
 kenworth.t610_gtm
 kenworth.t660.2017
@@ -49,6 +52,7 @@ kenworth.w900bb
 kenworth.w900b_gtm
 kenworth.w990
 kraz1
+kw_t609
 lone.star
 liner
 mackanthem.2018

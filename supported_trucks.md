@@ -40,14 +40,18 @@
 - International 9800
 - International 9900
 - International Lonestar
+- International LT 2019
 - Kenworth 521
 - Kenworth C500 (JDM)
 - Kenworth K100
+- Kenworth K100E (Overfloater)
 - Kenworth K108 (RTA)
 - Kenworth K200 (RTA)
+- Kenworth Long (richt05tv)
 - Kenworth Needle Nose
 - Kenworth T408 (RTA)
 - Kenworth T600
+- Kenworth T609
 - Kenworth T610 (GTM)
 - Kenworth T660
 - Kenworth T800 (dmitry68)
